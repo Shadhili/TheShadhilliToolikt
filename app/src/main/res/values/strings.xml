@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Shadhilli Toolkit</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="dhikr_button">Dhikr</string>
+    <string name="dhikr_button_text">Remembrance of God</string>
+    <string name="qasida_button">Qasaid</string>
+    <string name="lecture_button">Lectures</string>
+    <string name="tariqa_button">Tariqa</string>
+    <string name="title_activity_dhikr">DhikrActivity</string>
+    <string name="action_logo">Logo</string>
+    <string name="wird_button">Al Wird Ul \'Aam</string>
+    <string name="hizb_button">Hizb ul Bahr</string>
+    <string name="dalail_button">Dalail Al Khayrat</string>
+    <string name="gendhikr_button">General Dhikr</string>
+    <string name="title_activity_wird">WirdActivity</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_activity_splash">Shadhilli Toolkit</string>
+    <string name="greetings">Greetings, may the peace and blessings of God be upon You!</string>
+    <string name="wird_title">Al Wird ul \'Aam - The General Litany</string>
+    <string name="wird_test">Test</string>
+    <string name="title_activity_hizbbahractivity">hizbbahractivity</string>
+
+</resources>
