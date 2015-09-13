@@ -4,7 +4,7 @@
         <color name="ColorPrimary">#ffffe9</color>
         <color name="ColorPrimaryDark">#927e68</color>
         <color name="TextDimTop">#927e68</color>
-        <color name="textview1">#927e58</color>
+        <color name="textview1">#927e68</color>
 
     </resources>
 
