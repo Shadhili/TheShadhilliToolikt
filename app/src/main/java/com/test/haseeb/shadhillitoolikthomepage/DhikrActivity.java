@@ -42,7 +42,10 @@ public class DhikrActivity extends ActionBarActivity {
                     Intent myIntent = new Intent(getApplicationContext(), WirdActivity.class);
                     startActivity(myIntent);
                 }
-
+                if (position == 1) {
+                    Intent myIntent = new Intent(getApplicationContext(), hizbbahractivity.class);
+                    startActivity(myIntent);
+                }
 
             }
         });
