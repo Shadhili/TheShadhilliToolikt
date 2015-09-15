@@ -1,12 +1,69 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.test.haseeb.shadhillitoolikthomepage.hizbbahractivity">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gradient_background3"
+    android:orientation="vertical"
+    tools:context=".hizbbahractivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#927e68"
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        >
 
-</RelativeLayout>
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/hizb_title"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:layout_marginStart="5dp"
+            android:textColor="#ffffff"
+            android:id="@+id/wirdtitle"
+            />
+        <ImageButton
+            android:layout_height="25dp"
+            android:layout_width="30dp"
+            android:id="@+id/pausewird"
+            android:background="@drawable/pause"
+            android:clickable="true"
+            android:layout_gravity="center"
+            android:layout_marginEnd="65dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@+id/playwird"
+
+            />
+        <Button
+            android:layout_height="25dp"
+            android:layout_width="25dp"
+            android:id="@+id/playwird"
+            android:background="@drawable/play"
+            android:clickable="true"
+            android:layout_alignBottom="@id/wirdtitle"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="17.5dp"
+            android:layout_alignParentEnd="true"
+            />
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+    <android.support.v7.widget.RecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".WirdActivity"
+        />
+
+
+</LinearLayout>
+
