@@ -28,7 +28,7 @@ public class DhikrActivity extends ActionBarActivity {
 
 
 
-        final String[] Features = {"Wird ul 'Aam", "Hizb ul Bahr", "Hizb ul Nasr", "HasbunAllaah", "Dalail al Khayrat", "Astaghfar", "Selawat", "Tahlil"};
+        final String[] Features = {"Wird ul 'Aam", "Hizb ul Bahar", "Hizb ul Nasr", "HasbunAllaah Dhikr", "Al-Latifiyya Dhikr", "Salat Al-Yaqoutiya"};
 
         ListAdapter theAdapter = new DhikrAdapter(this, Features);
         final ListView dhikrlist  = (ListView) findViewById(R.id.dhikrlist);

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Shadhilli Toolkit</string>
+    <string name="app_name">The Golden Chain</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
@@ -19,7 +19,7 @@
     <string name="title_section1">Section 1</string>
     <string name="title_section2">Section 2</string>
     <string name="title_section3">Section 3</string>
-    <string name="title_activity_splash">Shadhilli Toolkit</string>
+    <string name="title_activity_splash">The Golden Chain</string>
     <string name="greetings">Greetings, may the peace and blessings of God be upon You!</string>
     <string name="wird_title">Al Wird ul \'Aam - The General Litany</string>
     <string name="wird_test">Test</string>
