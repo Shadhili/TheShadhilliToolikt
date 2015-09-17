@@ -10,12 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
-
-/**
- * Created by Haseeb on 16/09/2015.
- */
 public class nasractivity extends Activity {
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,15 +20,17 @@ public class nasractivity extends Activity {
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
 
         // this is data fro recycler view
-        ItemData itemsData[] = { new ItemData("",R.drawable.hn1),
-                new ItemData("",R.drawable.hn2),
-                new ItemData("",R.drawable.hn3),
-                new ItemData("",R.drawable.hn4),
-                new ItemData("",R.drawable.hn5),
-                new ItemData("",R.drawable.hn6),
-                new ItemData("",R.drawable.hn7),
-                new ItemData("",R.drawable.hn8),
-                new ItemData("",R.drawable.hn9)
+        ItemData itemsData[] = { new ItemData("",R.drawable.hb1),
+                new ItemData("",R.drawable.hb2),
+                new ItemData("",R.drawable.hb3),
+                new ItemData("",R.drawable.hb4),
+                new ItemData("",R.drawable.hb5),
+                new ItemData("",R.drawable.hb6),
+                new ItemData("",R.drawable.hb7),
+                new ItemData("",R.drawable.hb8),
+                new ItemData("",R.drawable.hb9),
+                new ItemData("",R.drawable.hb10),
+                new ItemData("",R.drawable.hb11)
 
         };
 
