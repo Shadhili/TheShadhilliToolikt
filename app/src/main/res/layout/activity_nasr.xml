@@ -1,7 +1,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
-android:layout_height="wrap_content"
+android:layout_height="match_parent"
 android:background="@drawable/gradient_background3"
 android:orientation="vertical"
 tools:context=".nasractivity"
@@ -56,13 +56,6 @@ tools:context=".nasractivity"
 </RelativeLayout>
 
 
-    <ListView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/nasrlist"
-        >
-
-    </ListView>
 
 <android.support.v7.widget.RecyclerView
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -72,7 +65,7 @@ tools:context=".nasractivity"
 
 
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     />
 
 

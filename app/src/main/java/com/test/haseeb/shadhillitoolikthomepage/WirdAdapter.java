@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 public class WirdAdapter extends RecyclerView.Adapter<WirdAdapter.ViewHolder> {
     private ItemData[] ItemData;
@@ -35,7 +34,6 @@ public class WirdAdapter extends RecyclerView.Adapter<WirdAdapter.ViewHolder> {
         // - get data from your itemsData at this position
         // - replace the contents of the view with that itemsData
 
-        viewHolder.txtViewTitle.setText(ItemData[position].getTitle());
         viewHolder.imgViewIcon.setImageResource(ItemData[position].getImageUrl());
 
 
@@ -44,12 +42,10 @@ public class WirdAdapter extends RecyclerView.Adapter<WirdAdapter.ViewHolder> {
     // inner class to hold a reference to each item of RecyclerView
     public static class ViewHolder extends RecyclerView.ViewHolder {
 
-        public TextView txtViewTitle;
         public ImageView imgViewIcon;
 
         public ViewHolder(View itemLayoutView) {
             super(itemLayoutView);
-            txtViewTitle = (TextView) itemLayoutView.findViewById(R.id.item_title);
             imgViewIcon = (ImageView) itemLayoutView.findViewById(R.id.item_icon);
         }
     }

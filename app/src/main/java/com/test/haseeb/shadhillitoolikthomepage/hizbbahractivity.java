@@ -29,8 +29,8 @@ public class hizbbahractivity extends Activity {
                 new ItemData("",R.drawable.hb7),
                 new ItemData("",R.drawable.hb8),
                 new ItemData("",R.drawable.hb9),
-                new ItemData("",R.drawable.hb10),
-                new ItemData("",R.drawable.hb11)
+                new ItemData("",R.drawable.hb10)
+
 
         };
 
