@@ -26,5 +26,8 @@
     <string name="title_activity_hizbbahractivity">hizbbahractivity</string>
     <string name="hizb_title">Hizb ul Bahar - The Litany of the Sea</string>
     <string name="nasr_title">Hizb ul Nasr - The Litany of Victory</string>
+    <string name="yaqoutiya_title">Salaat al-Yaqoutiya - The Salutation of the Resplendent Sapphire</string>
+    <string name="latif_title">Al-Latifiyya Dhikr -The Most Subtle,  The Gracious,  The Refined and Benevolent</string>
+    <string name="hasbunallah_title">HasbunAllaah Dhikr - Allah is sufficient for us, and He is the Best Disposer of affairs.</string>
 
 </resources>

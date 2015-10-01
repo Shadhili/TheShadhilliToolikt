@@ -51,6 +51,33 @@
                 android:value="com.test.haseeb.shadhillitoolikthomepage.DhikrActivity" />
         </activity>
         <activity
+            android:name=".yaqoutiyaactivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:parentActivityName=".DhikrActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.test.haseeb.shadhillitoolikthomepage.DhikrActivity" />
+        </activity>
+        <activity
+            android:name=".latifactivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:parentActivityName=".DhikrActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.test.haseeb.shadhillitoolikthomepage.DhikrActivity" />
+        </activity>
+        <activity
+            android:name=".hasbunallahactivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:parentActivityName=".DhikrActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.test.haseeb.shadhillitoolikthomepage.DhikrActivity" />
+        </activity>
+        <activity
             android:name=".SplashActivity"
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/title_activity_splash"

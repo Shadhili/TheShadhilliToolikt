@@ -1,6 +1,5 @@
 package com.test.haseeb.shadhillitoolikthomepage;
 
-
 import android.app.Activity;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -11,39 +10,37 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
-public class WirdActivity extends Activity {
+public class yaqoutiyaactivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_wird);
+        setContentView(R.layout.activity_yaqoutiya);
         // 1. get a reference to recyclerView
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
 
         // this is data fro recycler view
-        ItemData itemsData[] = { new ItemData("",R.drawable.w1),
-                new ItemData("",R.drawable.w2),
-                new ItemData("",R.drawable.w3),
-                new ItemData("",R.drawable.w4),
-                new ItemData("",R.drawable.w5),
-                new ItemData("",R.drawable.w6),
-                new ItemData("",R.drawable.w7),
-                new ItemData("",R.drawable.w8),
-                new ItemData("",R.drawable.w9),
-                new ItemData("",R.drawable.w10)
+        ItemData itemsData[] = { new ItemData("",R.drawable.y1),
+                new ItemData("",R.drawable.y2),
+                new ItemData("",R.drawable.y3),
+                new ItemData("",R.drawable.y4),
+                new ItemData("",R.drawable.y5),
+                new ItemData("",R.drawable.y6),
+                new ItemData("",R.drawable.y7),
+                new ItemData("",R.drawable.y8)
 
         };
 
         // 2. set layoutManger
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         // 3. create an adapter
-        WirdAdapter mAdapter = new WirdAdapter(itemsData);
+        yaqoutiyaadapter mAdapter = new yaqoutiyaadapter(itemsData);
         // 4. set adapter
         recyclerView.setAdapter(mAdapter);
         // 5. set item animator to DefaultAnimator
         recyclerView.setItemAnimator(new DefaultItemAnimator());
 
-        final MediaPlayer mp = MediaPlayer.create(this, R.raw.wird);
+        final MediaPlayer mp = MediaPlayer.create(this, R.raw.yaqoutiya);
 
         Button playwird = (Button) findViewById(R.id.playwird);
         playwird.performClick();
