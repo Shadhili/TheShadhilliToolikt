@@ -8,7 +8,6 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
 
 public class hizbbahractivity extends Activity {
 
@@ -57,8 +56,8 @@ public class hizbbahractivity extends Activity {
 
 
         });
-        ImageButton pausewird = (ImageButton) findViewById(R.id.pausewird);
-
+        Button pausewird = (Button) findViewById(R.id.pausewird);
+        pausewird.performClick();
         pausewird.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
 
