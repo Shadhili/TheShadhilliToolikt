@@ -2,32 +2,38 @@ package com.test.haseeb.shadhillitoolikthomepage;
 
 
 import android.app.Activity;
-import android.graphics.Typeface;
+import android.content.res.Resources;
 import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.TextView;
+import android.widget.ListAdapter;
+import android.widget.ListView;
 
 public class WirdActivity extends Activity {
 
+MediaPlayer mp;
+    String[] Arabic;
+    String[] Transliteration;
+    String[] Translation;
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wird);
-
-        TextView tv=(TextView)findViewById(R.id.wirdtext);
-
-        tv.setMovementMethod(new ScrollingMovementMethod());
-
-        Typeface tf = ArabicUtilities.face;
-        tv.setTypeface(tf);
+        Resources res=getResources();
+        Arabic=res.getStringArray(R.array.wirdarabic);
+        Transliteration=res.getStringArray(R.array.wirdtransliteration);
+        Translation=res.getStringArray(R.array.wirdtranslation);
 
 
 
-        final MediaPlayer mp = MediaPlayer.create(this, R.raw.wird);
+
+
+        mp = MediaPlayer.create(this, R.raw.wird);
+
+
 
         Button playwird = (Button) findViewById(R.id.playwird);
         playwird.performClick();
@@ -37,6 +43,7 @@ public class WirdActivity extends Activity {
 
 
                 mp.start();
+
             }
 
 
@@ -52,5 +59,36 @@ public class WirdActivity extends Activity {
             }
 
 
+        });
 
-        });}}
+
+        ListAdapter theAdapter = new Wirdadapter(this, Arabic, Transliteration, Translation);
+        final ListView wirdlist  = (ListView) findViewById(R.id.wirdlist);
+        wirdlist.setAdapter(theAdapter);
+
+
+
+
+
+
+        }
+
+    @Override
+    protected void onDestroy() {
+
+
+        super.onDestroy();
+        mp.stop();
+
+    }
+
+
+
+}
+
+
+
+
+
+
+

@@ -29,26 +29,146 @@
     <string name="yaqoutiya_title">Salaat al-Yaqoutiya - The Salutation of the Resplendent Sapphire</string>
     <string name="latif_title">Al-Latifiyya Dhikr -The Most Subtle,  The Gracious,  The Refined and Benevolent</string>
     <string name="hasbunallah_title">HasbunAllaah Dhikr - Allah is sufficient for us, and He is the Best Disposer of affairs.</string>
-    <string name="wird_content">
- أَعُوذُ بِاللهِ السَّمِيعِ الْعَلِيمِ مِنَ الشَّيْطَانِ الرَّجِيم\n\n
-        بِسْمِ اللهِ الرَّحْمَنِ الرَّحِيم
- \n\n
-        وَمَا تُقَدِّمُوا لِأَنْفُسِكُمْ مِنْ خَيْرٍ تَجِدُوهُ عِنْدَ اللهِ هُوَ خَيْراً وَأَعْظَمَ أَجْراً وَاسْتَغْفِرُوا اللهَ إِنَّ اللهَ غَفُورٌ رَّحِيم
- \n\n
-        أَسْتَغْفِرُ الله
- \n\n
-        أَسْتَغْفِرُ اللهَ الْعَظِيمَ الَّذِي لَا إِلَهَ إِلَّا هُوَ الْحَيَّ الْقَيُّومَ وَأَتُوبُ إِلَيْه
- \n\n
-        إِنَّ اللهَ وَمَلَآئِكَتَهُ يُصَلُّونَ عَلَى النَّبِيِّ يَا أَيُّهَا الَّذِينَ آمَنُوا صَلُّوا عَلَيْهِ وَسَلِّمُوا تَسْلِيماً
- \n\n
-        اَللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ عَبْدِكَ وَرَسُولِكَ النَّبِيِّ الْأُمِّيِّ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلِّمْ
- \n\n
-        اَللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ عَبْدِكَ وَرَسُولِكَ النَّبِيِّ الْأُمِّيِّ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلِّمْ تَسْلِيماً بِقَدْرِ عَظَمَةِ ذَاتِكَ فِي كُلِّ وَقْتٍ وَّحِينٍ
- \n\n
-        فَاعْلَمْ أَنَّهُ لَا إِلَهَ إِلَّا الله
- \n\n
-        لَا إِلَهَ إِلَّا الله
- \n\n
-    \u200e:</string>
+
+    <string-array name="wirdarabic">
+        <item>
+            أَعُوذُ بِاللهِ مِنَ الشَّيْطَانِ الرَّجِيم
+</item>
+        <item>
+            بِسْمِ اللهِ الرَّحْمَنِ الرَّحِيم
+</item>
+        <item>
+            وَمَا تُقَدِّمُوا لِأَنْفُسِكُمْ مِنْ خَيْرٍ تَجِدُوهُ عِنْدَ اللهِ هُوَ خَيْراً وَأَعْظَمَ أَجْراً وَاسْتَغْفِرُوا اللهَ إِنَّ اللهَ غَفُورٌ رَّحِيم
+</item>
+        <item>
+            أَسْتَغْفِرُ الله
+</item>
+        <item>
+            أَسْتَغْفِرُ اللهَ الْعَظِيمَ الَّذِي لَا إِلَهَ إِلَّا هُوَ الْحَيَّ الْقَيُّومَ وَأَتُوبُ إِلَيْه
+</item>
+        <item>
+            إِنَّ اللهَ وَمَلَآئِكَتَهُ يُصَلُّونَ عَلَى النَّبِيِّ يَا أَيُّهَا الَّذِينَ آمَنُوا صَلُّوا عَلَيْهِ وَسَلِّمُوا تَسْلِيماً
+</item>
+        <item>
+            اَللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ عَبْدِكَ وَرَسُولِكَ النَّبِيِّ الْأُمِّيِّ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلِّمْ
+</item>
+              <item>
+                  اَللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ عَبْدِكَ وَرَسُولِكَ النَّبِيِّ الْأُمِّيِّ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلِّمْ تَسْلِيماً بِقَدْرِ عَظَمَةِ ذَاتِكَ فِي كُلِّ وَقْتٍ وَّحِينٍ
+
+              </item>
+        <item>
+            فَاعْلَمْ أَنَّهُ لَا إِلَهَ إِلَّا الله
+</item>
+        <item>
+            لَا إِلهَ إِلَّا الله
+</item>
+        <item>
+            لَا إِلَهَ إِلَّا الله سَيِّدُنَا مُحَمَّدٌ رَّسُولُ اللهِ صَلَّى اللهُ عَلَيْهِ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّمَ
+</item>
+        <item>
+            بِسْمِ اللهِ الرَّحْمَنِ الرَّحِيمِ.
+\n
+            قُلْ هُوَ اللهُ أَحَدٌ.
+
+            اللهُ الصَّمَدُ.
+
+            لَمْ يَلِدْ وَلَمْ يُولَدْ.
+
+            وَلَمْ يَكُنْ لَّهُ كُفُواً أَحَدٌ.
+        </item>
+        <item>
+            بِسْمِ اللهِ الرَّحْمَنِ الرَّحِيمِ.
+\n
+            الْحَمْدُ لِلهِ رَبِّ الْعَالَمِينَ.
+
+            الرَّحْمَنَّ الرَّحِيمِ.
+
+            مَالِكِ يَوْمِ الدِّينِ.
+
+            إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ.
+
+            اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ.
+
+            صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّآلِّينَ.
+
+            آمِين
+        </item>
+<item> </item>
+    </string-array>
+    <string-array name="wirdtransliteration">
+        <item>A-`ŪDHU BILLĀHI MINASH SHAYTĀ-NIR RAJĪM
+</item>
+        <item>BIS-MIL-LĀHIR RAHMĀ-NIR RAHĪM
+</item>
+        <item>WA MĀ TUQAD-DIMŪ LI-ANFUSIKUM MIN KHAYRIN TAJIDŪHU `INDAL-LĀHI HUWA KHAYRAN WA A`A-ZAMA AJRĀ WAS-TAGH-FIRUL- LĀH INNAL-LĀHA GHAFŪRUR- RAHĪM
+</item>
+        <item>AS-TAGH-FIRUL- LĀH
+</item>
+        <item>AS-TAGH-FIRUL- LĀHAL `AZĪMAL- LA-DHĪ LA ILĀHA ILLĀ HUWAL- HAYYAL- QAY-YŪMA WA ATŪBU ILAYH
+</item>
+        <item>IN-NALLĀHA WA MALĀ-IKATAHU YUSALLŪNA `ALANNABIY, YĀ AY-YUHAL- LADHĪNA ĀMANŪ ŞALLŪ `ALAYHI WA SALLIMŪ TASLĪMĀ
+</item>
+        <item>ALLĀHUMMA ŞALLI `ALĀ SAYYIDINĀ MUHAMMADIN `ABDIKA WA RASŪLIKAN- NABI- YIL- UMMIY, WA `ALĀ ĀLIHI WA SAHBIHI WA SALLIM
+</item>
+        <item>ALLĀHUMMA ŞALLI `ALĀ SAYYIDINAA MUHAMMADIN `ABDIKA WA RASŪLIKAN- NABI- YIL- UMMIY, WA `ALĀ ĀLIHI WA SAHBIHII WA SALLIM TASLĪMAN BIQADRI `AŻAMATI DHĀTIKA FĪ KULLI WAQTIN WA HĪN
+</item>
+        <item>FA`LAM ANNAHU LĀ ILĀHA IL-LAL-LĀH
+</item>
+        <item>LĀ ILĀHA IL-LAL-LĀH
+</item>
+        <item>LĀ ILĀHA IL-LAL-LĀHU SAYYIDUNĀ MUHAMMADUR RASŪLUL-LĀH, ŞALLAL-LĀHU `ALAYHI WA `ALĀ ĀLIHIWA SAHBIHI WA SALLAM </item>
+        <item>BISMIL-LĀHIR- RAHMĀ-NIR RAHĪM,
+
+QUL HUWAL- LĀHU AHAD, ALLĀHUŞ- ŞAMAD, LAM YALID WA LAM YŪLAD, WA LAM YAKUL- LAHŪ KUFUWAN AHAD.
+</item>
+        <item>BISMIL-LĀHIR- RAHMĀ-NIR RAHĪM,
+
+ALHAMDU LIL-LĀHI RABBIL- `ĀLAMĪN, AR-RAHMĀ-NIRRAHĪM, MĀLIKI YAWMID- DĪN, IY-YĀKA NA`BUDU WA IYYĀKA NASTA`ĪN, IH-DINAŞ- ŞIRĀTAL MUSTAQĪM, ŞIRĀTAL LADHĪNA AN`AMTA `ALAYHIM, GHAYRIL MAGH-DŪBI `ALAYHIM WA LAD-DĀLLĪN. ĀMEEN.
+        </item>
+      <item> </item>
+    </string-array>
+    <string-array name="wirdtranslation">
+        <item>I seek refuge in Allah from Shaytaan, the rejected one.
+</item>
+        <item>In the Name of Allah, Most Gracious, Most Merciful.</item>
+        <item>
+            “And whatever good you send forth for yourselves, you shall find it with Allah, better and greater in reward. And seek the forgiveness of Allah, for Allah is Oft-Forgiving, Most Merciful.”
+           \n[Surah Al-Muzzammil, 73:20]
+</item>
+        <item>I seek the forgiveness of Allah.
+</item>
+        <item>I seek the forgiveness of Allah, the Most Great, other than whom there is no god, the Living, the Self-subsisting Supporter of all, and I turn to Him in Repentance.</item>
+        <item>“Verily Allah and His Angels send blessings on the Prophet: O you who believe, send blessings on him and salute him with all respect.”
+            \n[Surah Al-Ahzab, 33:56]
+</item>
+        <item>O Allah, bless our master Muhammad, Your Servant and Messenger, the Unlettered Prophet, and his family and Companions, and grant them peace.</item>
+        <item>O Allah, bless our master Muhammad, Your Servant and Messenger, the Unlettered Prophet, and his family and Companions, and grant them peace, as greatly as the greatness of Your Being, at every moment and time.
+</item>
+        <item>“Know, therefore, that there is no god but Allah.”
+            \n[Surah Muhammad, 47:19] </item>
+        <item>There is no god but Allah.
+</item>
+        <item>There is no god but Allah, our Master Muhammad is the Messenger of Allah, may the blessings of Allah be upon him and his family and his Companions, and may He grant them peace.</item>
+        <item>“Say: He is Allah, the One; Allah, the Eternal, Absolute; He begets not, nor is He begotten; And there is none like unto Him.”
+             \n[Surah Al-Ikhlas, 112: 1-4]
+</item>
+        <item>In the Name of Allah, Most Gracious, Most Merciful.
+All Praise is for Allah, Lord of the Worlds.
+Most Gracious, Most Merciful.
+Master of the Day of Judgement.
+You (alone) we worship; And You (alone) we ask for help.
+Guide us to the Straight Path.
+The Path of those upon whom You Have bestowed Your Grace,
+Not (the Path) of those who earn Your anger (wrath),
+Nor of those who go astray.
+ \n[Surah Al-Fatihah, 1:1-7]</item>
+
+        <item>Make Duā for yourself, your parents, your Shaykh, your fellow
+Brethren on this Path, and all Muslims.</item>
+
+    </string-array>
+
+
+
 
 </resources>
