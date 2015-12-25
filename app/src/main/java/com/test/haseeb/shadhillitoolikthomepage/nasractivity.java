@@ -21,14 +21,7 @@ public class nasractivity extends Activity {
 
         // this is data fro recycler view
         ItemData itemsData[] = { new ItemData("",R.drawable.hn1),
-                new ItemData("",R.drawable.hn2),
-                new ItemData("",R.drawable.hn3),
-                new ItemData("",R.drawable.hn4),
-                new ItemData("",R.drawable.hn5),
-                new ItemData("",R.drawable.hn6),
-                new ItemData("",R.drawable.hn7),
-                new ItemData("",R.drawable.hn8),
-                new ItemData("",R.drawable.hn9)
+
 
 
         };

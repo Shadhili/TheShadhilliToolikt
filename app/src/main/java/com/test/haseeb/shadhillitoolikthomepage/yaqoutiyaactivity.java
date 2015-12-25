@@ -21,13 +21,6 @@ public class yaqoutiyaactivity extends Activity {
 
         // this is data fro recycler view
         ItemData itemsData[] = { new ItemData("",R.drawable.y1),
-                new ItemData("",R.drawable.y2),
-                new ItemData("",R.drawable.y3),
-                new ItemData("",R.drawable.y4),
-                new ItemData("",R.drawable.y5),
-                new ItemData("",R.drawable.y6),
-                new ItemData("",R.drawable.y7),
-                new ItemData("",R.drawable.y8)
 
         };
 

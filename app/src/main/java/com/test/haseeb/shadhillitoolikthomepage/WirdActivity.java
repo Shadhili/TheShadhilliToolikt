@@ -17,6 +17,7 @@ MediaPlayer mp;
     String[] Arabic;
     String[] Transliteration;
     String[] Translation;
+    String[] Number;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -26,6 +27,7 @@ MediaPlayer mp;
         Arabic=res.getStringArray(R.array.wirdarabic);
         Transliteration=res.getStringArray(R.array.wirdtransliteration);
         Translation=res.getStringArray(R.array.wirdtranslation);
+        Number=res.getStringArray(R.array.wirdnumber);
 
 
 
@@ -62,7 +64,7 @@ MediaPlayer mp;
         });
 
 
-        ListAdapter theAdapter = new Wirdadapter(this, Arabic, Transliteration, Translation);
+        ListAdapter theAdapter = new Wirdadapter(this, Arabic, Transliteration, Translation, Number);
         final ListView wirdlist  = (ListView) findViewById(R.id.wirdlist);
         wirdlist.setAdapter(theAdapter);
 

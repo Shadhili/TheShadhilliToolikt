@@ -1,4 +1,4 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="5000pt"
@@ -8,14 +8,14 @@
     android:focusableInTouchMode="true"
     >
 
-<RelativeLayout
+    <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
     android:background="#927e68"
 
     >
-<TextView
+    <TextView
     android:layout_width="200dp"
     android:layout_height="wrap_content"
     android:text="@string/wird_title"
@@ -53,7 +53,7 @@
 
 
 
-</RelativeLayout>
+    </RelativeLayout>
 
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/scrollView1"
@@ -76,47 +76,14 @@
 
         <ListView
            android:layout_width="match_parent"
-           android:layout_height="5000dp"
+           android:layout_height="4100dp"
            android:id="@+id/wirdlist"
            android:gravity="right"
            android:divider="#f1f1f1"
            android:dividerHeight="0.5dp"
->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    >
 
        </ListView>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</LinearLayout>
+    </LinearLayout>
     </ScrollView>
-</LinearLayout>
+    </LinearLayout>

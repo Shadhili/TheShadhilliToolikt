@@ -21,10 +21,7 @@ public class latifactivity extends Activity {
 
         // this is data fro recycler view
         ItemData itemsData[] = { new ItemData("",R.drawable.l1),
-                new ItemData("",R.drawable.l2),
-                new ItemData("",R.drawable.l3),
-                new ItemData("",R.drawable.l4),
-                new ItemData("",R.drawable.l5)
+
 
         };
 

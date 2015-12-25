@@ -21,8 +21,7 @@ public class hasbunallahactivity extends Activity {
 
         // this is data fro recycler view
         ItemData itemsData[] = { new ItemData("",R.drawable.ha1),
-                new ItemData("",R.drawable.ha2),
-                new ItemData("",R.drawable.ha3)
+
 
         };
 
