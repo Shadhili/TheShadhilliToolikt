@@ -5,7 +5,8 @@ android:layout_height="match_parent"
 android:background="@drawable/gradient_background3"
 android:orientation="vertical"
 tools:context=".nasractivity"
-   >
+android:focusableInTouchMode="true"
+    >
 
 <RelativeLayout
     android:layout_width="match_parent"
@@ -57,17 +58,70 @@ tools:context=".nasractivity"
 
 
 
-<android.support.v7.widget.RecyclerView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/recyclerView"
-    tools:context=".nasractivity"
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="515dp" >
+
+        <LinearLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitStart"
+                android:src="@drawable/hn1"
+                android:id="@+id/nasrhead"
+                android:adjustViewBounds="true"/>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="7300dp"
+                android:id="@+id/nasrlist"
+                android:gravity="right"
+                android:divider="#f1f1f1"
+                android:dividerHeight="0.5dp"
+                >
 
 
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    />
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </ListView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>
 

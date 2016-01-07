@@ -5,11 +5,15 @@ import android.app.Activity;
 import android.content.res.Resources;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ListAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 public class hizbbahractivity extends Activity {
 
@@ -27,9 +31,10 @@ public class hizbbahractivity extends Activity {
         Arabic=res.getStringArray(R.array.bahrarabic);
         Transliteration=res.getStringArray(R.array.bahrtransliteration);
         Translation=res.getStringArray(R.array.bahrtranslation);
-        Number=res.getStringArray(R.array.wirdnumber);
 
-
+        LayoutInflater mInflater = getLayoutInflater();
+        final View mLayout = mInflater.inflate(R.layout.toast_layout, (ViewGroup) findViewById(R.id.toast_layout_root));
+        final TextView mText = (TextView) mLayout.findViewById(R.id.toast_text);
 
 
 
@@ -45,7 +50,11 @@ public class hizbbahractivity extends Activity {
 
 
                 mp.start();
-
+                Toast mToast = new Toast(getApplicationContext());
+                mText.setText("Playing");
+                mToast.setDuration(Toast.LENGTH_SHORT);
+                mToast.setView(mLayout);
+                mToast.show();
             }
 
 
@@ -57,14 +66,18 @@ public class hizbbahractivity extends Activity {
 
 
                 mp.pause();
-
+                Toast mToast = new Toast(getApplicationContext());
+                mText.setText("Paused");
+                mToast.setDuration(Toast.LENGTH_SHORT);
+                mToast.setView(mLayout);
+                mToast.show();
             }
 
 
         });
 
 
-        ListAdapter theAdapter = new bahradapter(this, Arabic, Transliteration, Translation, Number);
+        ListAdapter theAdapter = new bahradapter(this, Arabic, Transliteration, Translation);
         final ListView bahrlist  = (ListView) findViewById(R.id.bahrlist);
         bahrlist.setAdapter(theAdapter);
 

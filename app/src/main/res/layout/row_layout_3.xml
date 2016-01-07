@@ -9,11 +9,12 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/number"
-        android:textSize="10sp"
+        android:textSize="15sp"
         android:paddingLeft="15dp"
         android:paddingRight="15dp"
         android:paddingTop="15dp"
-        android:textColor="#4c4c4c">
+        android:textColor="#4c4c4c"
+        android:gravity="right">
 
     </TextView>
 

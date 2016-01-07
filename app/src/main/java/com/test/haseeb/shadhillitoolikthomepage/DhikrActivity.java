@@ -28,7 +28,7 @@ public class DhikrActivity extends ActionBarActivity {
 
 
 
-        final String[] Features = {"Wird ul 'Aam", "Hizb ul Bahar", "Hizb ul Nasr", "HasbunAllaah Dhikr", "Al-Latifiyya Dhikr", "Salat Al-Yaqoutiya"};
+        final String[] Features = {"Wird ul 'Aam", "Hizb ul Bahr", "Hizb ul Nasr", "HasbunAllaah Dhikr", "Al-Latifiya Dhikr", "Salaat Al-Yaqoutiya", "Salaat Al-Mashishiya"};
 
         ListAdapter theAdapter = new DhikrAdapter(this, Features);
         final ListView dhikrlist  = (ListView) findViewById(R.id.dhikrlist);
@@ -62,7 +62,10 @@ public class DhikrActivity extends ActionBarActivity {
                     Intent myIntent = new Intent(getApplicationContext(), yaqoutiyaactivity.class);
                     startActivity(myIntent);
                 }
-
+                if (position == 6) {
+                    Intent myIntent = new Intent(getApplicationContext(), mashishactivity.class);
+                    startActivity(myIntent);
+                }
 
             }
         });

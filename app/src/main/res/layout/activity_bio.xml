@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background3"
+    android:orientation="vertical"
+    tools:context=".bioactivity"
+    android:focusableInTouchMode="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#927e68"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nasr_title"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:layout_marginStart="5dp"
+            android:textColor="#ffffff"
+            android:id="@+id/wirdtitle"
+            />
+
+
+
+
+
+
+    </RelativeLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="515dp" >
+
+        <LinearLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitStart"
+                android:src="@drawable/hn1"
+                android:id="@+id/nasrhead"
+                android:adjustViewBounds="true"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bio_content"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:layout_marginStart="5dp"
+        android:textColor="#4c4c4c"
+        android:id="@+id/biocontent"
+        />
+
+       </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+

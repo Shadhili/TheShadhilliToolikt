@@ -1,41 +1,47 @@
 package com.test.haseeb.shadhillitoolikthomepage;
 
+
 import android.app.Activity;
+import android.content.res.Resources;
 import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ListAdapter;
+import android.widget.ListView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 public class nasractivity extends Activity {
 
+    MediaPlayer mp;
+    String[] Arabic;
+    String[] Transliteration;
+    String[] Translation;
+    String[] Number;
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nasr);
-        // 1. get a reference to recyclerView
-        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
+        Resources res=getResources();
+        Arabic=res.getStringArray(R.array.nasrarabic);
+        Transliteration=res.getStringArray(R.array.nasrtransliteration);
+        Translation=res.getStringArray(R.array.nasrtranslation);
+        LayoutInflater mInflater = getLayoutInflater();
+        final View mLayout = mInflater.inflate(R.layout.toast_layout, (ViewGroup) findViewById(R.id.toast_layout_root));
+        final TextView mText = (TextView) mLayout.findViewById(R.id.toast_text);
 
-        // this is data fro recycler view
-        ItemData itemsData[] = { new ItemData("",R.drawable.hn1),
 
 
 
-        };
 
-        // 2. set layoutManger
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        // 3. create an adapter
-        nasradapter mAdapter = new nasradapter(itemsData);
-        // 4. set adapter
-        recyclerView.setAdapter(mAdapter);
-        // 5. set item animator to DefaultAnimator
-        recyclerView.setItemAnimator(new DefaultItemAnimator());
+        mp = MediaPlayer.create(this, R.raw.nasr);
 
-        final MediaPlayer mp = MediaPlayer.create(this, R.raw.nasr);
+
 
         Button playwird = (Button) findViewById(R.id.playwird);
         playwird.performClick();
@@ -45,6 +51,11 @@ public class nasractivity extends Activity {
 
 
                 mp.start();
+                Toast mToast = new Toast(getApplicationContext());
+                mText.setText("Playing");
+                mToast.setDuration(Toast.LENGTH_SHORT);
+                mToast.setView(mLayout);
+                mToast.show();
             }
 
 
@@ -56,9 +67,44 @@ public class nasractivity extends Activity {
 
 
                 mp.pause();
-
+                Toast mToast = new Toast(getApplicationContext());
+                mText.setText("Paused");
+                mToast.setDuration(Toast.LENGTH_SHORT);
+                mToast.setView(mLayout);
+                mToast.show();
             }
 
 
+        });
 
-        });}}
+
+        ListAdapter theAdapter = new nasradapter(this, Arabic, Transliteration, Translation);
+        final ListView nasrlist  = (ListView) findViewById(R.id.nasrlist);
+        nasrlist.setAdapter(theAdapter);
+
+
+
+
+
+
+    }
+
+    @Override
+    protected void onDestroy() {
+
+
+        super.onDestroy();
+        mp.stop();
+
+    }
+
+
+
+}
+
+
+
+
+
+
+

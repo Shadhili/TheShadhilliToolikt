@@ -32,28 +32,31 @@ public class HomeActivity extends ActionBarActivity { /* When using Appcombat su
 
 
 
-        String[] Features = {"Awrad", "Reminders", "Introduction to the Shadhili Way", "The Shadhili Chain", "Biography of Imam Hasan As-Shadhili", "Feedback"};
+        String[] Features = {"Awrad", "Biography of Imam Abul Hassan As-Shadhili", "Introduction to the Shadhili Way", "The Shadhili Chain",  "Reminders", "Feedback"};
 
         ListAdapter theAdapter = new MyAdapter(this, Features);
         ListView homelist  = (ListView) findViewById(R.id.homelist);
         homelist.setAdapter(theAdapter);
         homelist.setOnItemClickListener( new AdapterView.OnItemClickListener() {
-                                                    @Override
-                                                    public void onItemClick(AdapterView<?> AdapterView, View view, int position, long id) {
-
-                                                        if (position == 0)
-                                                        {
-                                                            Intent myIntent = new Intent(getApplicationContext(), DhikrActivity.class);
-                                                            startActivity(myIntent);
-                                                        }
-
-
-
-
-
-
-                                                    }
-                                                });
+        @Override
+        public void onItemClick(AdapterView<?> AdapterView, View view, int position, long id) {
+        if (position == 0)
+            {Intent myIntent = new Intent(getApplicationContext(), DhikrActivity.class);
+            startActivity(myIntent);}
+        if (position == 1)
+            {Intent myIntent = new Intent(getApplicationContext(), bioactivity.class);
+            startActivity(myIntent);}
+        if (position == 2)
+        {Intent myIntent = new Intent(getApplicationContext(), introductionactivity.class);
+            startActivity(myIntent);}
+        if (position == 3)
+            {Intent myIntent = new Intent(getApplicationContext(), shadhilichainactivity.class);
+            startActivity(myIntent);}
+        if (position == 4)
+            {Intent myIntent = new Intent(getApplicationContext(), feedbackactivity.class);
+            startActivity(myIntent);}
+                }
+                });
 
     }
 

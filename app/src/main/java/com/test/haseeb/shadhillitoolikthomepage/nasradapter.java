@@ -1,59 +1,66 @@
 package com.test.haseeb.shadhillitoolikthomepage;
 
-import android.support.v7.widget.RecyclerView;
+import android.content.Context;
+import android.content.res.AssetManager;
+import android.graphics.Typeface;
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
+import android.widget.ArrayAdapter;
+import android.widget.TextView;
 
-public class nasradapter extends RecyclerView.Adapter<nasradapter.ViewHolder> {
-    private ItemData[] ItemData;
+class nasradapter extends ArrayAdapter<String> {
+    private AssetManager assets;
 
-    public nasradapter(ItemData[] ItemData) {
-        this.ItemData = ItemData;
+    Typeface font = Typeface.createFromAsset(getContext().getAssets(),
+            "fonts/trado.ttf");
+    Typeface font2 = Typeface.createFromAsset(getContext().getAssets(),
+            "fonts/JaghbUni-Rom.ttf");
+    String[] titleArray;
+    String[] descriptionArray;
+    String[] subtitleArray;
+
+
+
+    public nasradapter(Context context, String[] titles, String[] desc,String[] sub) {
+        super(context, R.layout.row_layout_3, R.id.textview2,titles);
+        this.titleArray=titles;
+        this.descriptionArray=desc;
+        this.subtitleArray=sub;
+
     }
 
-    // Create new views (invoked by the layout manager)
     @Override
-    public nasradapter.ViewHolder onCreateViewHolder(ViewGroup parent,
-                                                     int viewType) {
-        // create a new view
-        View itemLayoutView = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.list_row, parent, false);
-
-        // create ViewHolder
-
-        ViewHolder viewHolder = new ViewHolder(itemLayoutView);
-        return viewHolder;
-    }
-
-    // Replace the contents of a view (invoked by the layout manager)
-    @Override
-    public void onBindViewHolder(ViewHolder viewHolder, int position) {
-
-        // - get data from your itemsData at this position
-        // - replace the contents of the view with that itemsData
-
-        viewHolder.imgViewIcon.setImageResource(ItemData[position].getImageUrl());
+    public View getView(int position, View convertView, ViewGroup parent) {
 
 
-    }
 
-    // inner class to hold a reference to each item of RecyclerView
-    public static class ViewHolder extends RecyclerView.ViewHolder {
 
-        public ImageView imgViewIcon;
 
-        public ViewHolder(View itemLayoutView) {
-            super(itemLayoutView);
-            imgViewIcon = (ImageView) itemLayoutView.findViewById(R.id.item_icon);
-        }
+        LayoutInflater theInflater = LayoutInflater.from(getContext());
+
+        View theView = theInflater.inflate(R.layout.row_layout_3, parent, false);
+
+        TextView Arabic = (TextView) theView.findViewById(R.id.textview2);
+        TextView Transliteration = (TextView) theView.findViewById(R.id.transliteration);
+        TextView Translation = (TextView) theView.findViewById(R.id.translation);
+
+        Arabic.setText(titleArray[position]);
+        Transliteration.setText(descriptionArray[position]);
+        Translation.setText(subtitleArray[position]);
+
+        Arabic.setTypeface(font);
+        Transliteration.setTypeface(font2);
+        Translation.setTypeface(font2);
+
+        String text =subtitleArray[position];
+        Translation.setText(Html.fromHtml(text));
+        return theView;
+
+
     }
 
 
-    // Return the size of your itemsData (invoked by the layout manager)
-    @Override
-    public int getItemCount() {
-        return ItemData.length;
-    }
+
 }
