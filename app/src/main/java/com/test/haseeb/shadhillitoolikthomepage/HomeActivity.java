@@ -32,7 +32,7 @@ public class HomeActivity extends ActionBarActivity { /* When using Appcombat su
 
 
 
-        String[] Features = {"Awrad", "Biography of Imam Abul Hassan As-Shadhili", "Introduction to the Shadhili Way", "The Shadhili Chain",  "Reminders", "Feedback"};
+        String[] Features = {"Awrad", "Brief Biography of Imam Abul Hassan As-Shadhili", "Introduction to the Shadhili Way", "The Shadhili Chain",  "Reminders", "Feedback"};
 
         ListAdapter theAdapter = new MyAdapter(this, Features);
         ListView homelist  = (ListView) findViewById(R.id.homelist);
