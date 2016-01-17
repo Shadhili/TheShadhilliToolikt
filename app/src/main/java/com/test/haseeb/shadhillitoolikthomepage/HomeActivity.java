@@ -53,6 +53,9 @@ public class HomeActivity extends ActionBarActivity { /* When using Appcombat su
             {Intent myIntent = new Intent(getApplicationContext(), shadhilichainactivity.class);
             startActivity(myIntent);}
         if (position == 4)
+            {Intent myIntent = new Intent(getApplicationContext(), remindersactivity.class);
+                startActivity(myIntent);}
+        if (position == 5)
             {Intent myIntent = new Intent(getApplicationContext(), feedbackactivity.class);
             startActivity(myIntent);}
                 }

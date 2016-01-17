@@ -1,72 +1,74 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.nirhart.parallaxscroll.views.ParallaxScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_background3"
-    android:orientation="vertical"
+    app:parallax_factor="1.9"
     tools:context=".bioactivity"
-    android:focusableInTouchMode="true"
+    android:background="#ffffff"
     >
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="#927e68"
-
+        android:orientation="vertical"
+        android:focusableInTouchMode="true"
+        android:paddingBottom="20dp"
         >
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/nasr_title"
-            android:textSize="16sp"
-            android:padding="10dp"
-            android:layout_marginStart="5dp"
-            android:textColor="#ffffff"
-            android:id="@+id/wirdtitle"
-            />
-
-
-
-
-
-
-    </RelativeLayout>
-
-    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/scrollView1"
-        android:layout_width="match_parent"
-        android:layout_height="515dp" >
-
-        <LinearLayout
-            android:id="@+id/relativeLayout1"
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="horizontal"
+            android:background="#927e68"
+            android:id="@+id/wirdplay"
 
-            <ImageView
-                android:layout_width="match_parent"
+            >
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:scaleType="fitStart"
-                android:src="@drawable/hn1"
-                android:id="@+id/nasrhead"
-                android:adjustViewBounds="true"/>
+                android:text="@string/bio_title"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:layout_marginStart="5dp"
+                android:textColor="#ffffff"
+                android:id="@+id/wirdtitle"
+                />
 
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/bio_content"
-        android:textSize="16sp"
-        android:padding="10dp"
-        android:layout_marginStart="5dp"
-        android:textColor="#4c4c4c"
-        android:id="@+id/biocontent"
-        />
+        </RelativeLayout>
 
-       </LinearLayout>
-    </ScrollView>
 
-</LinearLayout>
 
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitStart"
+            android:src="@drawable/bio1"
+            android:id="@+id/wirdhead"
+            android:adjustViewBounds="true"/>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="10000dp"
+            android:id="@+id/biolist"
+            android:gravity="right"
+            android:divider="#f1f1f1"
+            android:dividerHeight="0.5dp"
+            android:longClickable="true"
+            >
+
+        </ListView>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitStart"
+            android:src="@drawable/scfooter"
+            android:id="@+id/scfooter"
+            android:adjustViewBounds="true"
+            android:padding="20dp"/>
+
+
+    </LinearLayout>
+
+</com.nirhart.parallaxscroll.views.ParallaxScrollView>
