@@ -1568,6 +1568,7 @@ Shaykh Abu al-Hasan Shadhili alayhir rahman died in Egypt, 656 Hijri - 1258 Comm
     <string name="reminder_title">Please select the Reminders that you wish to receive:</string>
     <string name="wird_morn">Wird ul Am - Morning</string>
     <string name="wird_eve">Wird ul Am - Evening</string>
+    <string name="hizbbahrreminder">Hizb ul-Bahr - Afternoon</string>
 
     <string-array name="menu">
         <item>Copy Translation</item>

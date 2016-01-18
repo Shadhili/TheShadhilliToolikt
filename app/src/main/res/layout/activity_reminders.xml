@@ -17,7 +17,7 @@
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/checkbox2"
+                android:id="@+id/checkbox1"
                 android:text="@string/wird_morn"
                 android:textColor="@color/textview1"
                 android:textSize="18sp"
@@ -26,8 +26,16 @@
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/checkbox"
+                android:id="@+id/checkbox2"
                 android:text="@string/wird_eve"
+                android:textColor="@color/textview1"
+                android:textSize="18sp"
+                />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkbox3"
+                android:text="@string/hizbbahrreminder"
                 android:textColor="@color/textview1"
                 android:textSize="18sp"
                 />

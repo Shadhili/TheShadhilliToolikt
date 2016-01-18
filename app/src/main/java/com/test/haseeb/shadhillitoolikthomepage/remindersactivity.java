@@ -17,15 +17,18 @@ import com.parse.ParsePush;
 public class remindersactivity extends Activity implements OnClickListener {
     CheckBox checkbox1;
     CheckBox checkbox2;
+    CheckBox checkbox3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reminders);
-        checkbox1 = (CheckBox) findViewById(R.id.checkbox);
+        checkbox1 = (CheckBox) findViewById(R.id.checkbox1);
         checkbox1.setOnClickListener(this);
         checkbox2 = (CheckBox) findViewById(R.id.checkbox2);
         checkbox2.setOnClickListener(this);
+        checkbox3 = (CheckBox) findViewById(R.id.checkbox3);
+        checkbox3.setOnClickListener(this);
         loadSavedPreferences();
     }
 
@@ -45,6 +48,12 @@ public class remindersactivity extends Activity implements OnClickListener {
         } else {
             checkbox2.setChecked(false);
         }
+        boolean checkboxValue3 = sharedPreferences.getBoolean("CheckBox_Value3", false);
+        if (checkboxValue3) {
+            checkbox3.setChecked(true);
+        } else {
+            checkbox3.setChecked(false);
+        }
     }
 
     private void savePreferences(String key, boolean value) {
@@ -61,22 +70,30 @@ public class remindersactivity extends Activity implements OnClickListener {
 
         if (checkbox1.isChecked()) {
 
-            ParsePush.subscribeInBackground("WirdEvening");
-        }
-        else {
-            ParsePush.unsubscribeInBackground("WirdEvening");
-
-        }
-        savePreferences("CheckBox_Value2", checkbox2.isChecked());
-        if (checkbox2.isChecked()) {
-
             ParsePush.subscribeInBackground("WirdMorning");
         }
         else {
             ParsePush.unsubscribeInBackground("WirdMorning");
 
         }
+        savePreferences("CheckBox_Value2", checkbox2.isChecked());
+        if (checkbox2.isChecked()) {
 
+            ParsePush.subscribeInBackground("WirdEvening");
+        }
+        else {
+            ParsePush.unsubscribeInBackground("WirdEvening");
+
+        }
+        savePreferences("CheckBox_Value3", checkbox3.isChecked());
+        if (checkbox3.isChecked()) {
+
+            ParsePush.subscribeInBackground("HizbBahr");
+        }
+        else {
+            ParsePush.unsubscribeInBackground("HizbBahr");
+
+        }
     }
 
 
