@@ -2,42 +2,78 @@
 
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_height="match_parent" android:layout_width="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:background="@drawable/gradient_background3"
+
+            >
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/reminder_title"
                 android:textSize="20sp"
-                android:padding ="10dp"
+                android:padding ="15dp"
                 android:textColor="#ffffff"
                 android:background="@color/textview1"
                 />
-
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/customborder"
+    android:paddingLeft="15dp"
+    >
             <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
                 android:id="@+id/checkbox1"
                 android:text="@string/wird_morn"
                 android:textColor="@color/textview1"
                 android:textSize="18sp"
+                android:paddingLeft="15dp"
+
 
                 />
+</RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/customborder"
+                android:layout_marginTop="-1dp"
+                android:paddingLeft="15dp"
+
+                >
+
             <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
                 android:id="@+id/checkbox2"
                 android:text="@string/wird_eve"
                 android:textColor="@color/textview1"
                 android:textSize="18sp"
+                android:paddingLeft="15dp"
                 />
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/checkbox3"
+
+
+                </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/customborder"
+                android:layout_marginTop="-1dp"
+                android:paddingLeft="15dp"
+                >
+        <CheckBox
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingLeft="15dp"
+            android:id="@+id/checkbox3"
                 android:text="@string/hizbbahrreminder"
                 android:textColor="@color/textview1"
                 android:textSize="18sp"
-                />
+
+            />
+            </RelativeLayout>
+
             </LinearLayout>
 
