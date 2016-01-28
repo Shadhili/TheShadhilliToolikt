@@ -2,12 +2,18 @@ package com.test.haseeb.shadhillitoolikthomepage;
 
 
 import android.app.Activity;
+import android.content.ClipData;
+import android.content.ClipboardManager;
 import android.content.res.Resources;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.view.ContextMenu;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ListAdapter;
@@ -87,6 +93,103 @@ public class hizbbahractivity extends Activity {
 
 
     }
+
+    @Override
+    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+
+        if (v.getId() == R.id.bahrlist) {
+
+            String[] menuItems = getResources().getStringArray(R.array.menu);
+            for (int i = 0; i<menuItems.length; i++) {
+                menu.add(Menu.NONE, i, i, menuItems[i]);
+            }
+
+        }}
+
+
+    @Override
+    public boolean onContextItemSelected(MenuItem item) {
+        AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo)item.getMenuInfo();
+        ClipboardManager clipboard = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
+        String listItemName1 = Translation[info.position];
+        String listItemName2 = Arabic[info.position];
+        String listItemName3 = Transliteration[info.position];
+
+
+        if (item.getItemId() == 0) {
+
+
+            int menuItemIndex = item.getItemId();
+            String[] menuItems = getResources().getStringArray(R.array.menu);
+            String menuItemName = menuItems[menuItemIndex];
+
+            ClipData clip = ClipData.newPlainText("simple text", listItemName1);
+            clipboard.setPrimaryClip(clip);
+
+            LayoutInflater mInflater = getLayoutInflater();
+            final View mLayout = mInflater.inflate(R.layout.toast_layout, (ViewGroup) findViewById(R.id.toast_layout_root));
+            final TextView mText = (TextView) mLayout.findViewById(R.id.toast_text);
+            Toast mToast = new Toast(getApplicationContext());
+            mText.setText("Translation Copied");
+            mToast.setDuration(Toast.LENGTH_SHORT);
+            mToast.setView(mLayout);
+            mToast.show();
+        }
+        if (item.getItemId() == 1) {
+            int menuItemIndex = item.getItemId();
+            String[] menuItems = getResources().getStringArray(R.array.menu);
+            String menuItemName = menuItems[menuItemIndex];
+
+            ClipData clip2 = ClipData.newPlainText("simple text", listItemName2);
+            clipboard.setPrimaryClip(clip2);
+
+            LayoutInflater mInflater = getLayoutInflater();
+            final View mLayout = mInflater.inflate(R.layout.toast_layout, (ViewGroup) findViewById(R.id.toast_layout_root));
+            final TextView mText = (TextView) mLayout.findViewById(R.id.toast_text);
+            Toast mToast = new Toast(getApplicationContext());
+            mText.setText("Arabic Copied");
+            mToast.setDuration(Toast.LENGTH_SHORT);
+            mToast.setView(mLayout);
+            mToast.show();
+        }
+        if (item.getItemId() == 2) {
+            int menuItemIndex = item.getItemId();
+            String[] menuItems = getResources().getStringArray(R.array.menu);
+            String menuItemName = menuItems[menuItemIndex];
+
+            ClipData clip3 = ClipData.newPlainText("simple text", listItemName3);
+            clipboard.setPrimaryClip(clip3);
+
+            LayoutInflater mInflater = getLayoutInflater();
+            final View mLayout = mInflater.inflate(R.layout.toast_layout, (ViewGroup) findViewById(R.id.toast_layout_root));
+            final TextView mText = (TextView) mLayout.findViewById(R.id.toast_text);
+            Toast mToast = new Toast(getApplicationContext());
+            mText.setText("Transliteration Copied");
+            mToast.setDuration(Toast.LENGTH_SHORT);
+            mToast.setView(mLayout);
+            mToast.show();
+        }
+        if (item.getItemId() == 3) {
+            int menuItemIndex = item.getItemId();
+            String[] menuItems = getResources().getStringArray(R.array.menu);
+            String menuItemName = menuItems[menuItemIndex];
+
+            ClipData clip4 = ClipData.newPlainText("simple text", listItemName2 + System.getProperty ("line.separator") + listItemName1 + System.getProperty ("line.separator") + listItemName3);
+            clipboard.setPrimaryClip(clip4);
+
+            LayoutInflater mInflater = getLayoutInflater();
+            final View mLayout = mInflater.inflate(R.layout.toast_layout, (ViewGroup) findViewById(R.id.toast_layout_root));
+            final TextView mText = (TextView) mLayout.findViewById(R.id.toast_text);
+            Toast mToast = new Toast(getApplicationContext());
+            mText.setText("All Copied");
+            mToast.setDuration(Toast.LENGTH_SHORT);
+            mToast.setView(mLayout);
+            mToast.show();
+        }
+        return true;
+
+    }
+
 
     @Override
     protected void onDestroy() {
