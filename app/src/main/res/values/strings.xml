@@ -1325,59 +1325,103 @@ May the prayers, salutations, greetings, bounties and blessings of Allah be show
 Brethren on this Path, and all Muslims. </item>
     </string-array>
 
-    <string-array name="shadhilichainarabic"> //20
+    <string-array name="shadhilichainarabic">
 
-        <item> </item>
-        <item> </item>
-        <item> </item>
-        <item> </item>
-        <item> </item>
-        <item> </item>
-        <item> </item>
-        <item> </item>
-        <item> </item>
-        <item> </item>
+        <item> سَيِّدُنَا الشَّيْخُ مُحَمَّد أَبُو الْهُدَى اليَعْقُوبِي الحَسَنِي الإِدْرِيسِي
+</item>
+        <item>سَيِّدُنَا الشَّيْخُ إِبْرَاهِيمُ اليَعْقُوبِي الحَسَنِي الإِدْرِيسِي
+ </item>
+        <item>سَيِّدُنَا الشَّيْخُ إِسْمَاعِيلُ اليَعْقُوبِي الحَسَنِي الإِدْرِيسِي
+ </item>
+        <item>سَيِّدُنَا الشَّيْخُ مُحَمَّد المُبَارَكُ بْنُ مُحَمَّد المُبَارَك الكَبِير الحَسَنِي الإِدْرِيسِي
+ </item>
+        <item>سَيِّدُنَا الشَّيْخُ مُحَمَّد الطَّيِّبُ بْنُ مُحَمَّد المُبَارَك الكَبِير الحَسَنِي الإِدْرِيسِي
+ </item>
+        <item>سَيِّدُنَا الشَّيْخُ مُحَمَّد بْنُ مَسْعُود الفَاسِي الحَسَنِي الإِدْرِيسِي
+ </item>
+        <item>سَيِّدُنَا الشَّيْخُ مُحَمَّد الحَسَنُ بْنُ حَمْزَةَ ظَافِر الْمَدَنِي الحَسَنِي
+ </item>
+        <item>سَيِّدُنَا الشَّيْخُ أَبُو حَامِدٍ مُحَمَّد الْعَرَبِي بْنُ أَحْمَدَ الدَّرْقَاوِي الحَسَنِي
+ </item>
+        <item>سَيِّدُنَا الشَّيْخُ عَلِيّ العِمْرَانِي الفَاسِي (المُلَقَّب بِالْجَمَل)
+ </item>
+        <item>سَيِّدُنَا الشَّيْخُ العَرَبِي بْنُ أَحْمَدَ بْنِ عَبْدِ الله (المَشْهُورُ بِالْغَوْث)
+ </item>
 
-        <item> </item>
-        <item> </item>
-        <item> </item>
-        <item> </item>
-        <item> </item>
-        <item> </item>
-        <item> </item>
-        <item> </item>
-        <item> </item>
-        <item> </item>
+        <item>سَيِّدُنَا الشَّيْخُ أَحْمَدُ بْنُ عَبْدِ اللهِ الفَاسِي
+ </item>
+        <item>سَيِّدُنَا الشَّيْخُ قَاسِم الأَخْصَاصِي
+ </item>
+        <item>سَيِّدُنَا الشَّيْخُ عَبْدُ الرَّحْمَن بْنُ مُحَمَّد الفَاسِي
+ </item>
+        <item>سَيِّدُنَا الشَّيْخُ يُوسُفُ بْنُ مُحَمَّد الفَاسِي
+ </item>
+        <item>سَيِّدُنَا الشَّيْخُ عَبْدُ الرَّحْمَنِ المَجْذُوب
+ </item>
+        <item>سَيِّدُنَا الشَّيْخُ عَلِيُّ الدَّوَّار
+ </item>
+        <item>سَيِّدُنَا الشَّيْخُ إِبْرَاهِيمُ إِفْحَام الرُّرْهُونِي
+ </item>
+        <item>سَيِّدُنَا الشَّيْخُ أَحْمَدُ زَرُّوقُ البُرْلُسِيّ
+ </item>
+        <item>سَيِّدُنَا الشَّيْخُ أَبُو الْعَبَّاس أَحْمَدُ بْنُ عُقْبَةَ الْحَضْرَمِيّ
+ </item>
+        <item>سَيِّدُنَا الشَّيْخُ أَبُو زَكَرِيَّا يَحْيَى القَادِرِي
+ </item>
 
-        <item> </item>
-        <item> </item>
-        <item> </item>
-        <item> </item>
-        <item> </item>
-        <item> </item>
-        <item> </item>
-        <item> </item>
-        <item> </item>
-        <item> </item>
+        <item>سَيِّدُنَا الشَّيْخُ عَلِيُّ بْنُ مُحَمَّد وَفَاء
+ </item>
+        <item>سَيِّدُنَا الشَّيْخُ مُحَمَّد وَفَاء
+ </item>
+        <item>سَيِّدُنَا الشَّيْخُ أَبُو سُلَيْمَانَ دَاوُدُ بْنُ عُمَرَ البَاخِلِيّ
+ </item>
+        <item>سَيِّدُنَا الشَّيْخُ تَاجُ الدِّينِ أَحْمَدُ بْنُ مُحَمَّد بْنِ عَبْدِ الْكَرِيمِ الشَّهِير بِابْنِ عَطَآءِ اللهِ الإِسْكَنْدَرِي
+ </item>
+        <item>سَيِّدُنَا الشَّيْخُ أَبُو العَبَّاسِ المُرْسِيُّ
+ </item>
+        <item>سَيِّدُنَا الشَّيْخُ أَبُو الْحَسَنِ عَلِيّ بْنُ عَبْدِ الْجَبَّارِ الشَّاذِلِيّ
+ </item>
+        <item>سَيِّدُنَا الشَّيْخُ عَبْدُ السَّلَامِ بْنُ مَشِيش
+ </item>
+        <item>سَيِّدُنَا الشَّيْخُ عَبْدُ الرَّحْمَنِ الحَسَنِي العَطَّار المُلَقَّب بِالزَّيَّات
+ </item>
+        <item>سَيِّدُنَا الشَّيْخُ تَقِيُّ الدِّينِ الفَقِير
+ </item>
+        <item>سَيِّدُنَا الشَّيْخُ فَخْرُ الدِّين
+ </item>
 
-        <item> </item>
-        <item> </item>
-        <item> </item>
-        <item> </item>
-        <item> </item>
-        <item> </item>
-        <item> </item>
-        <item> </item>
-        <item> </item>
-        <item> </item>
+        <item>سَيِّدُنَا الشَّيْخُ نُورُ الدِّينِ أَبُو الحَسَنِ عَلِيّ
+ </item>
+        <item>سَيِّدُنَا الشَّيْخُ مُحَمَّد تَاجُ الدِّين
+ </item>
+        <item>سَيِّدُنَا الشَّيْخُ شَمْسُ الدِّينِ أَبُو مُحَمَّد
+ </item>
+        <item>سَيِّدُنَا الشَّيْخُ زَيْنُ الدِّينِ القَزْوِينِي
+ </item>
+        <item>سَيِّدُنَا الشَّيْخُ أَبُو إِسْحَاقَ إِبْرَاهِيم البَصَرِي
+ </item>
+        <item>سَيِّدُنَا الشَّيْخُ أَبُو القَاسِمِ أَحْمَدُ المَرْوَانِي
+ </item>
+        <item>سَيِّدُنَا الشَّيْخُ أَبُو مُحَمَّد سَعِيدٌ
+ </item>
+        <item>سَيِّدُنَا الشَّيْخُ سَعْدٌ
+ </item>
+        <item>سَيِّدُنَا الشَّيْخُ أَبُو مُحَمَّد فَتْحُ السَّعُود
+ </item>
+        <item>سَيِّدُنَا الشَّيْخُ الغَزْوَانِي
+ </item>
 
-        <item> </item>
-        <item> </item>
-        <item> </item>
-        <item> </item>
-        <item> </item>
-        <item> </item>
-        <item> </item>
+        <item>سَيِّدُنَا الشَّيْخُ مُحَمَّد جَابِرُ بْنُ عَبْدِ الله
+ </item>
+        <item>سَيِّدُنَا الإِمَامُ الحَسَنُ بْنُ عَلِيٍّ رَضِيَ اللهُ تَعَالَى عَنْهُ
+ </item>
+        <item>سَيِّدُنَا عَلِيُّ بْنُ أَبِي طَالِبٍ رَضِيَ اللهُ تَعَالَى عَنْهُ وَكَرَّمَ وَجْهَهُ
+ </item>
+        <item>سَيِّدُنَا مُحَمَّدٌ رَّسُولُ اللهِ صَلَّى اللهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ
+ </item>
+        <item>سَيِّدُنَا جِبْرِيلُ عَلَيْهِ السَّلَام
+ </item>
+        <item>اللهُ       لَا إِلَهَ إِلَّا هُوَ </item>
         <item> </item>
 
 
@@ -1385,145 +1429,149 @@ Brethren on this Path, and all Muslims. </item>
     <string-array name="shadhilichainenglish">//48
 
         <item>
-The respected Shaykh, Erudite Scholar, and Spiritual Master, Sayyidi Muhammad Abul-Huda al-Ya\'qoubi al-Hassani al-Shadhili is authorised in the Shadhili Path by a number of Masters including:
+Our Master Shaykh Muḥammad Abul-Hudā al-Ya’qoubi al-Ḥasanī al-Idrīsī
 
         </item>
         <item>
-The Grandshaykh, the Joiner of the Two Oceans of Shari\'ah and Haqiqah, the Venerated Qutb, the Perfect Guide, the Light of Damascus and the whole world, al-Shaykh al-Sayyid Ibrahim al-Ya\'qoubi al-Hassani (died 1985), who took the Path from many Shaykhs including his father:
+who took it from his father; Our Master Shaykh Ibrāhīm al-Ya’qoubi al-Ḥasanī al-Idrisī [d. 1406 Hijrī]
         </item>
         <item>
-The Friend of Allah, the Realized Gnostic, al-Shaykh al-Sayyid Isma\'il al-Ya\'qoubi al-Hassani, who took it from:         </item>
+who took it from his father; Our Master Shaykh Ismā’īl al-Ya’qoubi al-Ḥasanī al-Idrisī [d. 1380 Hijrī]
+ </item>
         <item>
-Al-Shaykh Sayyidi Muhammad al-Mubarak al-Hassani, who took it from:
+who took it from; Our Master Shaykh Muḥammad al-Mubārak ibn Muḥammad al-Mubārak al-Kabīr al-Ḥasanī al-Idrisī [d. 1330 Hijrī]
         </item>
         <item>
-The Master of the Shadhiliyyah in Damascus in the 13th century, the Great Pole, the Erudite Scholar, al-Shaykh al-Sayyid Muhammad al-Tayyib al-Hassani, who took it from:
+who took it from his brother; Our Master Shaykh Muḥammad al-Ṭayyib ibn Muḥammad al-Mubārak al-Kabīr al-Ḥasanī al-Idrisī [d. 1313 Hijrī]
         </item>
         <item>
-Al-Shaykh Sayyidi Muhammad ibn Mas\'ud al-Maghribi al-Fasi, who took it from:
+who took it from; Our Master Shaykh Muḥammad ibn Mas’ūd al-Fāsī al-Ḥasanī al-Idrisī [d. 1289 Hijrī]
         </item>
         <item>
-Al-Shaykh Sayyidi Muhammad ibn Hamza Dhaafir al-Madani, who took it from:
+who took it from; Our Master Shaykh Muḥammad al-Ḥasan ibn Ḥamza Ẓāfir al-Madanī al-Ḥasanī [d. 1264 Hijrī]
         </item>
         <item>
-The Great Pole, the Realised Gnostic, the Caller to Allah, al-Shaykh Sayyidi al-\'Arabi al-Darqaawi al-Hassani, who took it from:
+who took it from; Our Master Shaykh Abū Ḥāmid Mụhammad al-’Arabī ibn Aḥmad al-Darqāwī al-Ḥasanī [d. 1239 Hijrī]
+        </item>
+
+        <item>
+who took it from; Our Master Shaykh ‘Ali al-’Imrānī al-Fāsī (who was named ‘al-Jamal’) [d. 1194 Hijrī]
         </item>
         <item>
-Al-Shaykh Sayyidi Ali al-Hassani, also known as al-Jamal, who took it from:
+who took it from; Our Master Shaykh al-’Arabī ibn Aḥmad ibn ‘Abdullāh (who was known as ‘al-Ghawth’)
         </item>
         <item>
-The Ghawth, Al-Shaykh Sayyidi al-\'Arabi ibn Ahmad ibn \'Abdillah, who took it from his father,
+who took it from his father; Our Master Shaykh Aḥmad ibn Abdullah al-Fāsī
         </item>
         <item>
-Al-Shaykh Sayyidi Ahmad ibn \'Abdillah al-Fasi, who took it from:
+who took it from; Our Master Shaykh Qāsim al-Akhṣāṣī
         </item>
         <item>
-Al-Shaykh Sayyidi Qasim al-Khassasi, who took it from:
+who took it from; Our Master Shaykh ‘Abdur-Raḥmān ibn Muḥammad al-Fāsī
         </item>
         <item>
-Al-Shaykh Sayyidi Muhammad ibn \'Abdillah al-Fasi, who took it from:
+who took it from his brother; Our Master Shaykh Yūsuf ibn Muḥammad al-Fāsī
         </item>
         <item>
-Al-Shaykh Sayyidi \'Abdul-Rahman the Gnostic, who took it from:
+who took it from; Our Master Shaykh ‘Abdur-Raḥmān al-Majdhūb
         </item>
         <item>
-Al-Shaykh Sayyidi Yusuf al-Fasi, who took it from:
+who took it from; Our Master Shaykh ‘Ali al-Dawwār
         </item>
         <item>
-Al-Shaykh Sayyidi \'Abdul-Rahman the Attracted (al-Majdhoub), who took it from:
+who took it from; Our Master Shaykh Ibrāhīm Ifḥām al-Rurhūnī
         </item>
         <item>
-The Roamer, Al-Shaykh Sayyidi Ali al-Sanhaji, who took it from:
+who took it from; Our Master Shaykh Aḥmad Zarrūq al-Burlusī
         </item>
-        <item>
-Al-Shaykh Sayyidi Ibrahim Ifhaam, who took it from:
-        </item>
-        <item>
-The Famous Guide, Master of the Inward and Outward Disciplines, Destroyer of Innovations, Al-Shaykh Sayyidi Ahmad Zarruq al-Fasi, who took it from:         </item>
+
+
 <item>
-Al-Shaykh Sayyidi Ahmad ibn \'Uqbah al-Hadhrami, who took it from:
+who took it from; Our Master Shaykh Abul-’Abbās Aḥmad ibn ‘Uqbah al-Ḥaḍramī
 </item>
         <item>
-Al-Shaykh Sayyidi Yahya al-Qadiri, who took it from:
+who took it from; Our Master Shaykh Abū Zakariyyā Yaḥyā al-Qādirī
 </item>
        <item>
-Al-Shaykh Sayyidi Ali ibn Muhammad Wafa, who took it from:
+who took it from; Our Master Shaykh ‘Ali ibn Muḥammad Wafā
 </item>
         <item>
-His father, The Ocean of Purity, Al-Shaykh Sayyidi Muhammad Wafa, who took it from:
+who took it from his father; Our Master Shaykh Muḥammad Wafā
 </item>
         <item>
-Al-Shaykh Sayyidi Dawud ibn al-Baakhili, who took it from:
+who took it from; Our Master Shaykh Abū Sulaymān Dāwūd ibn ‘Umar al-Bākhilī
 </item>
         <item>
-The Realized Gnostic, the famous author of al-Hikam, the Erudite Scholar, Al-Shaykh Sayyidi Ibn \'Ataa-illah the Alexandrian, who took it from:
+who took it from; Our Master Shaykh Tāj al-Dīn Aḥmad ibn Muḥammad ibn ‘Abdul-Karīm (who was famously known as ibn ‘Aṭā-illāh al-Iskandarī)
 </item>
         <item>
-The Great Qutb, the Sufi Master, Al-Shaykh Sayyidi Abul-\'Abbas al-Mursi, who took it from:
+who took it from; Our Master Shaykh Abul-’Abbās al-Mursī
 </item>
         <item>
-Our Venerated Master, the Qutb of Qutbs, Imam of this Blessed Path, Reviver of the Prophetic teaching, Transmitter of the Prophetic Light, Al-Shaykh Sayyidi Abul-Hassan al-Shadhili al-Hassani, who took it from:
+who took it from; Our Master Shaykh Abul-Ḥasan ‘Ali ibn ‘Abdul-Jabbār al-Shādhilī
 </item>
         <item>
-The Great Qutb, the Saint, Al-Shaykh Sayyidi \'Abdul-Salaam ibn Mashish, who took it from:
+who took it from; Our Master Shaykh Abdus-Salām ibn Mashīsh
+</item>
+
+        <item>who took it from; Our Master Shaykh ‘Abdur-Raḥmān al-Ḥasanī al-’Aṭṭār (who was named ‘al-Zayyāt’)
 </item>
         <item>
-The Qutb, Al-Shaykh Sayyidi \'Abdul-Rahman al-Madani the Perfumer, who took it from:
+who took it from; Our Master Shaykh Taqiyy al-Dīn al-Faqīr
 </item>
         <item>
-The Qutb, Al-Shaykh Sayyidi Tuqayy ul-Deen al-Fuqayyar, who took it from:
+who took it from; Our Master Shaykh Fakhr al-Dīn
 </item>
         <item>
-The Qutb, Al-Shaykh Sayyidi Fakhr ul-Deen, who took it from:
-</item>
-        <item>
-        The Qutb, Al-Shaykh Sayyidi Nur ul-Deen Abil-Hassan \'Ali, who took it from:
+who took it from; Our Master Shaykh Nūr al-Dīn Abul-Ḥasan ‘Ali
         </item>
          <item>
-The Qutb, Al-Shaykh Sayyidi Muhammad Taj ul-Deen, who took it from:
+who took it from; Our Master Shaykh Muḥammad Tāj al-Dīn
         </item>
          <item>
-The Qutb, Al-Shaykh Sayyidi Shams ul-Deen Abi Muhammad, who took it from:
+who took it from; Our Master Shaykh Shams al-Dīn Abū Muḥammad
         </item>
         <item>
-        The Qutb, Al-Shaykh Sayyidi Zayn ul-Deen al-Qazwini, who took it from:
+who took it from; Our Master Shaykh Zayn al-Dīn al-Qazwīnī
         </item>
          <item>
-The Qutb, Al-Shaykh Sayyidi Abu Ishaq Ibrahim al-Basri, who took it from:
+who took it from; Our Master Shaykh Abū Isḥāq Ibrāhīm al-Baṣarī
         </item>
          <item>
-The Qutb, Al-Shaykh Sayyidi Abul-Qasim Ahmad al-Marwaani, who took it from:
+who took it from; Our Master Shaykh Abul-Qāsim Aḥmad al-Marwānī
         </item>
          <item>
-The Qutb, Al-Shaykh Sayyidi Abu Muhammad Sa\'eed, who took it from:
+who took it from; Our Master Shaykh Abū Muḥammad Sa’īd
+        </item>
+
+         <item>
+who took it from; Our Master Shaykh Sa’d
         </item>
          <item>
-The Qutb, Al-Shaykh Sayyidi Sa\'d, who took it from:
-        </item>
-         <item>
-The Qutb, Al-Shaykh Sayyidi Abu Muhammad Fath al-Sa\'ud, who took it from:
+who took it from; Our Master Shaykh Abū Muḥammad Fatḥ al-Sa’ūd
         </item>
         <item>
-The Qutb, Al-Shaykh Sayyidi al-Ghazwini, who took it from:
+who took it from; Our Master Shaykh al-Ghazwānī
         </item>
         <item>
-The Qutb, Al-Shaykh Sayyidi Abu Muhammad Jabir ibn Abdillah, who took it from:
+who took it from; Our Master Shaykh Muḥammad Jābir ibn ‘Abdullāh
         </item>
         <item>
-The First of the Qutbs, Master of the People of Islam, Grandson of the Beloved of God (upon him be peace), Lord of the Spiritual Realm, Prince of the Believers, our Liege-lord, Sayyidini al-Hassan ibn Ali ibn Abi Talib (may Allah be pleased with him and his parents), who took it from:
+who took it from; Our Master al-Imām al-Ḥasan ibn ‘Ali (may Allah be pleased with them)
         </item>
         <item>
-His Father, The Lion of Allah, Door to the City of Knowledge, Vicegerent of the Prophet (upon him be peace), Subduer  of Khaybar, Imam of Imams, Abu Turaab, Prince of the Believers, our Liege-lord,  Sayyiduna Ali ibn Abi Talib (may Allah ennoble his face), who received directly from:
+who took it from his father; Our Master ‘Ali ibn Abī Ṭālib (may Allah be pleased with him and enoble his face)
         </item>
         <item>
-The Master of Messengers, Chief of the Prophets, Imam of the Pious, Embellishment of the Heavens and Earth, Prince of the Two Abodes, Intercessor on the Last Day, Mercy to the Universe, the Perfect Example, the Infallible Guide, al-Nabi al-Ummiy, the Beloved of God, our Liege-lord, Sayyiduna Abul-Qasim Muhammad al-Mustafa (may the mercy of Allah and peace be upon him and his family eternally),  who received from:
+who took it from the Seal of Prophets; Our Master Muḥammad the Messenger of Allāh (peace and blessings be upon him and his family)
+
         </item>
         <item>
-The Chief of Angels, the Closest of those Drawn Close, the Transmitter of Divine Revelation, Companion of Prophets, the Firmly-Established with God,  Sayyiduna Jibril (upon him be salutations and peace), who received directly from:
+who took it from the Leader of the Angels; Our Master Jibrīl (upon him be peace)
+
         </item>
         <item>
-The Lord of Power and Might, Allah \'Azza wa jall, other than whom there is no other deity.
-        </item>
+who took it from the Creator, besides Whom there is no other diety; Allāh Most-High.        </item>
         <item>
             Make Duā for yourself, your parents, your Shaykh and the Shaykh\'s of this Silsila, your fellow
 Brethren on this Path, and all Muslims.
