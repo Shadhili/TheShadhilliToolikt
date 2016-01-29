@@ -9,7 +9,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/bio_content"
-        android:textSize="15sp"
+        android:textSize="20sp"
         android:padding="15dp"
 
         android:textColor="#4c4c4c">

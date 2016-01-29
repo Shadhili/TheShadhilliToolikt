@@ -88,6 +88,7 @@ public class WirdActivity extends Activity {
         wirdlist.setAdapter(theAdapter);
         registerForContextMenu(wirdlist);
         ListAdapter listAdapter = wirdlist.getAdapter();
+
     }
 
 

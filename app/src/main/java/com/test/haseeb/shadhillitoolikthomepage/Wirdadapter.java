@@ -32,6 +32,7 @@ class Wirdadapter extends ArrayAdapter<String> {
         this.subtitleArray=sub;
         this.numberArray=num;
 
+
     }
 
     @Override
