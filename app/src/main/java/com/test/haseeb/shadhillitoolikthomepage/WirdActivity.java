@@ -29,7 +29,6 @@ public class WirdActivity extends Activity {
     String[] Translation;
     String[] Number;
 
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -88,7 +87,8 @@ public class WirdActivity extends Activity {
         final ListView wirdlist = (ListView) findViewById(R.id.wirdlist);
         wirdlist.setAdapter(theAdapter);
         registerForContextMenu(wirdlist);
-        ListAdapter listAdapter = wirdlist.getAdapter();}
+        ListAdapter listAdapter = wirdlist.getAdapter();
+    }
 
 
 
