@@ -49,8 +49,7 @@ public class hasbunallahactivity extends AppCompatActivity {
         final View mLayout = mInflater.inflate(R.layout.toast_layout, (ViewGroup) findViewById(R.id.toast_layout_root));
         final TextView mText = (TextView) mLayout.findViewById(R.id.toast_text);
 
-        assert getSupportActionBar() != null;
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
 
 
         mp = MediaPlayer.create(this, R.raw.hasbunallah);
@@ -58,6 +57,9 @@ public class hasbunallahactivity extends AppCompatActivity {
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
         myToolbar.setSubtitle("Allaah is Sufficient for us");
+
+        assert getSupportActionBar() != null;
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         ListAdapter theAdapter = new hasbunallahadapter(this, Arabic, Transliteration, Translation, Number);
         final ListView hasblist  = (ListView) findViewById(R.id.hasblist);
