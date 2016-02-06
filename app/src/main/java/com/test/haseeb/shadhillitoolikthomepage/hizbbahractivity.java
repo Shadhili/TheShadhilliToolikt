@@ -3,6 +3,7 @@ package com.test.haseeb.shadhillitoolikthomepage;
 
 import android.content.ClipData;
 import android.content.ClipboardManager;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -32,7 +33,7 @@ public class hizbbahractivity extends AppCompatActivity {
     String[] Number;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hizbbahractivity);
         Resources res=getResources();
@@ -48,6 +49,8 @@ public class hizbbahractivity extends AppCompatActivity {
         myToolbar.setTitle("Hizb ul Bahr");
         myToolbar.setSubtitle("The Litany of the Sea");
 
+        assert getSupportActionBar() != null;
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         ListAdapter theAdapter = new bahradapter(this, Arabic, Transliteration, Translation);
         final ListView bahrlist = (ListView) findViewById(R.id.bahrlist);
@@ -97,7 +100,16 @@ public class hizbbahractivity extends AppCompatActivity {
             mToast.setView(mLayout);
             mToast.show();
         }
-        return true;
+
+        int id = item.getItemId();
+        if (id == android.R.id.home) {
+            Intent parentIntent1 = new Intent(this,DhikrActivity.class);
+            startActivity(parentIntent1);
+            mp.stop();
+
+
+        }
+        return super.onOptionsItemSelected(item);
     }
 
 
