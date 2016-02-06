@@ -42,9 +42,9 @@
         </activity>
         <activity
             android:name=".WirdActivity"
-            android:configChanges="keyboardHidden|screenSize"            android:label="@string/app_name"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:parentActivityName=".DhikrActivity"
-
+            android:label="@string/wird_name"
              >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -52,7 +52,7 @@
         </activity>
         <activity
             android:name=".hizbbahractivity"
-            android:configChanges="keyboardHidden|screenSize"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/bahr_name"
             android:parentActivityName=".DhikrActivity" >
             <meta-data
@@ -61,8 +61,8 @@
         </activity>
         <activity
             android:name=".nasractivity"
-            android:configChanges="keyboardHidden|screenSize"
-            android:label="@string/app_name"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/nasr_name"
             android:parentActivityName=".DhikrActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -70,8 +70,8 @@
         </activity>
         <activity
             android:name=".yaqoutiyaactivity"
-            android:configChanges="keyboardHidden|screenSize"
-            android:label="@string/app_name"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/yaqoutiya_name"
             android:parentActivityName=".DhikrActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -79,8 +79,8 @@
         </activity>
         <activity
             android:name=".mashishactivity"
-            android:configChanges="keyboardHidden|screenSize"
-            android:label="@string/app_name"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/mashish_name"
             android:parentActivityName=".DhikrActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -88,8 +88,8 @@
         </activity>
         <activity
             android:name=".latifactivity"
-            android:configChanges="keyboardHidden|screenSize"
-            android:label="@string/app_name"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/latif_name"
             android:parentActivityName=".DhikrActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -97,8 +97,8 @@
         </activity>
         <activity
             android:name=".hasbunallahactivity"
-            android:configChanges="keyboardHidden|screenSize"
-            android:label="@string/app_name"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/hasbunallah_name"
             android:parentActivityName=".DhikrActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -135,7 +135,7 @@
         <activity
             android:name=".remindersactivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
-            android:label="@string/app_name"
+            android:label="@string/reminders_name"
             android:parentActivityName=".HomeActivity"
             android:screenOrientation="portrait" >
             <meta-data
