@@ -71,7 +71,7 @@
 
         <ListView
             android:layout_width="match_parent"
-            android:layout_height="5000dp"
+            android:layout_height="4300dp"
             android:id="@+id/wirdlist"
             android:gravity="right"
             android:divider="#f1f1f1"

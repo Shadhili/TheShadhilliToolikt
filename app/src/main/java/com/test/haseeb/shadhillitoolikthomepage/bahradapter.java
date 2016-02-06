@@ -24,7 +24,7 @@ class bahradapter extends ArrayAdapter<String> {
 
 
     public bahradapter(Context context, String[] titles, String[] desc,String[] sub) {
-        super(context, R.layout.row_layout_3, R.id.textview2,titles);
+        super(context, R.layout.row_layout_5, R.id.textview2,titles);
         this.titleArray=titles;
         this.descriptionArray=desc;
         this.subtitleArray=sub;
@@ -40,7 +40,7 @@ class bahradapter extends ArrayAdapter<String> {
 
         LayoutInflater theInflater = LayoutInflater.from(getContext());
 
-        View theView = theInflater.inflate(R.layout.row_layout_3, parent, false);
+        View theView = theInflater.inflate(R.layout.row_layout_5, parent, false);
 
         TextView Arabic = (TextView) theView.findViewById(R.id.textview2);
         TextView Transliteration = (TextView) theView.findViewById(R.id.transliteration);

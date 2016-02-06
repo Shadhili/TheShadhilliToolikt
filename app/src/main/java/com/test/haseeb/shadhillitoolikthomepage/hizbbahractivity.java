@@ -1,27 +1,29 @@
 package com.test.haseeb.shadhillitoolikthomepage;
 
 
-import android.app.Activity;
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.res.Resources;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.ContextMenu;
 import android.view.LayoutInflater;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.Button;
-import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class hizbbahractivity extends Activity {
+public class hizbbahractivity extends AppCompatActivity {
+    private Toolbar toolbar;                              // Declaring the Toolbar Object
 
     MediaPlayer mp;
     String[] Arabic;
@@ -30,7 +32,7 @@ public class hizbbahractivity extends Activity {
     String[] Number;
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hizbbahractivity);
         Resources res=getResources();
@@ -38,64 +40,72 @@ public class hizbbahractivity extends Activity {
         Transliteration=res.getStringArray(R.array.bahrtransliteration);
         Translation=res.getStringArray(R.array.bahrtranslation);
 
+        mp = MediaPlayer.create(this, R.raw.bahr);
+
+
+        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
+        setSupportActionBar(myToolbar);
+        myToolbar.setTitle("Hizb ul Bahr");
+        myToolbar.setSubtitle("The Litany of the Sea");
+
+
+        ListAdapter theAdapter = new bahradapter(this, Arabic, Transliteration, Translation);
+        final ListView bahrlist = (ListView) findViewById(R.id.bahrlist);
+        bahrlist.setAdapter(theAdapter);
+        ImageView a = new ImageView(this);
+        a.setImageResource(R.drawable.hb1);
+        bahrlist.addHeaderView(a, null, false);
+        ImageView b = new ImageView(this);
+        b.setImageResource(R.drawable.scfooter);
+        bahrlist.addFooterView(b, null, false);
+        registerForContextMenu(bahrlist);
+        ListAdapter listAdapter = bahrlist.getAdapter();
+        a.setScaleType(ImageView.ScaleType.FIT_START);
+        a.setAdjustViewBounds(true);
+
+           }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.bahrtitle, menu);
+        return true;
+     }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
         LayoutInflater mInflater = getLayoutInflater();
         final View mLayout = mInflater.inflate(R.layout.toast_layout, (ViewGroup) findViewById(R.id.toast_layout_root));
         final TextView mText = (TextView) mLayout.findViewById(R.id.toast_text);
 
+        if (item.getItemId() == R.id.action_play) {
 
+            mp.start();
+            Toast mToast = new Toast(getApplicationContext());
+            mText.setText("Playing");
+            mToast.setDuration(Toast.LENGTH_SHORT);
+            mToast.setView(mLayout);
+            mToast.show();
 
-        mp = MediaPlayer.create(this, R.raw.bahr);
-
-
-
-        Button playwird = (Button) findViewById(R.id.playwird);
-        playwird.performClick();
-        playwird.setOnClickListener(new View.OnClickListener() {
-
-            public void onClick(View view) {
-
-
-                mp.start();
-                Toast mToast = new Toast(getApplicationContext());
-                mText.setText("Playing");
-                mToast.setDuration(Toast.LENGTH_SHORT);
-                mToast.setView(mLayout);
-                mToast.show();
-            }
-
-
-        });
-        ImageButton pausewird = (ImageButton) findViewById(R.id.pausewird);
-
-        pausewird.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-
-
-                mp.pause();
-                Toast mToast = new Toast(getApplicationContext());
-                mText.setText("Paused");
-                mToast.setDuration(Toast.LENGTH_SHORT);
-                mToast.setView(mLayout);
-                mToast.show();
-            }
-
-
-        });
-
-
-        ListAdapter theAdapter = new bahradapter(this, Arabic, Transliteration, Translation);
-        final ListView bahrlist  = (ListView) findViewById(R.id.bahrlist);
-        bahrlist.setAdapter(theAdapter);
-
-
-
-
-
-
+        }
+        if (item.getItemId() == R.id.action_pause) {
+            mp.pause();
+            Toast mToast = new Toast(getApplicationContext());
+            mText.setText("Paused");
+            mToast.setDuration(Toast.LENGTH_SHORT);
+            mToast.setView(mLayout);
+            mToast.show();
+        }
+        return true;
     }
+
 
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+        super.onCreateContextMenu(menu, v, menuInfo);
+
+
 
         if (v.getId() == R.id.bahrlist) {
 
@@ -103,7 +113,6 @@ public class hizbbahractivity extends Activity {
             for (int i = 0; i<menuItems.length; i++) {
                 menu.add(Menu.NONE, i, i, menuItems[i]);
             }
-
         }}
 
 
@@ -111,9 +120,9 @@ public class hizbbahractivity extends Activity {
     public boolean onContextItemSelected(MenuItem item) {
         AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo)item.getMenuInfo();
         ClipboardManager clipboard = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
-        String listItemName1 = Translation[info.position];
-        String listItemName2 = Arabic[info.position];
-        String listItemName3 = Transliteration[info.position];
+        String listItemName1 = Translation[info.position-1];
+        String listItemName2 = Arabic[info.position-1];
+        String listItemName3 = Transliteration[info.position-1];
 
 
         if (item.getItemId() == 0) {

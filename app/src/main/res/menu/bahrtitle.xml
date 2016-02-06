@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/action_play"
+        android:icon="@drawable/play"
+        android:title="Play"
+        tools:ignore="HardcodedText"/>
+    <item
+        android:id="@+id/action_pause"
+        android:icon="@drawable/pause"
+        android:title="Pause"
+        tools:ignore="HardcodedText"/>
+
+</menu>
