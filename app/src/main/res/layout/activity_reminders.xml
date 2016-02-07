@@ -1,21 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background3"
 
-
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_height="match_parent" android:layout_width="match_parent"
-            android:orientation="vertical"
-            android:background="@drawable/gradient_background3"
-
-            >
-
-            <TextView
+    >
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/my_toolbar"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/reminder_title"
-                android:textSize="20sp"
-                android:padding ="15dp"
-                android:textColor="#ffffff"
-                android:background="@color/textview1"
-                />
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                android:elevation="3dp"
+                android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding ="10dp"
+                android:layout_margin="5dp"
+                android:textSize="18sp"
+                android:background="#ffffff"
+                android:spinnerMode="dropdown" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/remindercontainer">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reminder_title"
+        android:textSize="18sp"
+        android:paddingLeft ="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:textColor="#ffffff"
+        android:background="@color/textview1"
+        />
+
 <RelativeLayout
     android:layout_width="fill_parent"
     android:layout_height="50dp"
@@ -40,7 +67,6 @@
                 android:background="@drawable/customborder"
                 android:layout_marginTop="-1dp"
                 android:paddingLeft="15dp"
-
                 >
 
             <CheckBox
@@ -74,6 +100,6 @@
 
             />
             </RelativeLayout>
-
+    </LinearLayout>
             </LinearLayout>
 

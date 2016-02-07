@@ -30,7 +30,35 @@
     <string name="yaqoutiya_title">Salaat al-Yaqoutiya - The Salutation of the Resplendent Sapphire</string>
     <string name="latif_title">Al-Latifiyya Dhikr - The Most Subtle</string>
     <string name="hasbunallah_title">HasbunAllaah Dhikr - Allaah is sufficient for us</string>
-   <string-array name="wirdnumber">
+    <string-array name="timezone">
+        <item> Please Select your Time Zone (UTC)</item>
+        <item>UTC±00:00 – London | Casablanca | Dublin </item>
+        <item>UTC+01:00 – Madrid | Algiers | Copenhagen</item>
+        <item>UTC+02:00 – Cairo | Damascus | Jerusalem</item>
+        <item>UTC+03:00 – Kuwait City | Nairobi | Moscow</item>
+        <item>UTC+04:00 – Abu Dhabi | Port Louis | Muscat</item>
+        <item>UTC+05:00 – Kabul | Islamabad | Ashgabat</item>
+        <item>UTC+06:00 – Dhaka | Thimphu | Bishkek</item>
+        <item>UTC+07:00 – Jakarta | Bangkok | Hanoi</item>
+        <item>UTC+08:00 – Beijing | Kuala Lumpur | Taipei</item>
+        <item>UTC+09:00 – Tokyo | Seoul | Dili</item>
+        <item>UTC+10:00 – Port Moresby</item>
+        <item>UTC+11:00 – Palikir | Gizo | Port Vila</item>
+        <item>UTC+12:00 – Suva | Majuro | Yaren</item>
+        <item>UTC−01:00 – Praia | Azores</item>
+        <item>UTC−02:00 – Brasilia | King Edward Point</item>
+        <item>UTC−03:00 – Buenos Aires | Santiago | Nuuk</item>
+        <item>UTC−04:00 – San Juan | Hamilton | Santo Domingo</item>
+        <item>UTC−05:00 – Ottawa | Washington | Kinston </item>
+        <item>UTC−06:00 – Guatemala | San Jose | Mexico City</item>
+        <item>UTC−07:00 – Arizona | New Mexico | Utah</item>
+        <item>UTC−08:00 – Adamstown | Nevada</item>
+        <item>UTC−09:00 – Alaska </item>
+        <item>UTC−10:00 – Rarotonga | Hawaii</item>
+        <item>UTC−11:00 – Alofi   </item>
+
+    </string-array>
+    <string-array name="wirdnumber">
         <item> Recite Once:</item>
         <item> Recite Once:</item>
         <item> Recite Once:</item>
@@ -1614,6 +1642,7 @@ Shaykh Abu al-Hasan Shadhili alayhir rahman died in Egypt, 656 Hijri - 1258 Comm
     <string name="feedback_title">Feedback</string>
     <string name="feedback_area">Leave feedback here</string>
     <string name="reminder_title">Please select the Reminders that you wish to receive:</string>
+    <string name="timezone_title">Please select your Time Zone (UTC):</string>
     <string name="wird_morn">Wird ul Am - Morning</string>
     <string name="wird_eve">Wird ul Am - Evening</string>
     <string name="hizbbahrreminder">Hizb ul-Bahr - Afternoon</string>
