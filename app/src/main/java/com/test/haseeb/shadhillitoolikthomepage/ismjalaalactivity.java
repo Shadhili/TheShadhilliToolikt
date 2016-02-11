@@ -1,6 +1,7 @@
 package com.test.haseeb.shadhillitoolikthomepage;
 
 
+import android.app.Activity;
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.res.Resources;
@@ -21,7 +22,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class ismjalaalactivity extends AppCompatActivity {
+public class ismjalaalactivity extends Activity {
 
 
 
