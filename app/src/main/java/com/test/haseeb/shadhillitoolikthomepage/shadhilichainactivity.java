@@ -43,8 +43,9 @@ public class shadhilichainactivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         ListAdapter theAdapter = new shadhilichainadapter(this, Arabic, Translation, headerimg, footerimg);
         final ListView mylist  = (ListView) findViewById(R.id.shadhilichainlist);
-        View header = getLayoutInflater().inflate(R.layout.header, null);
-        View footer = getLayoutInflater().inflate(R.layout.footer, null);
+        View header = getLayoutInflater().inflate(R.layout.header, null, false);
+        View footer = getLayoutInflater().inflate(R.layout.footer, null, false);
+
         mylist.addHeaderView(header);
         mylist.addFooterView(footer);
         mylist.setAdapter(theAdapter);

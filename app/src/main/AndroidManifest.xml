@@ -47,6 +47,29 @@
                 android:value="com.test.haseeb.shadhillitoolikthomepage.HomeActivity" />
         </activity>
         <activity
+            android:name=".extrasactivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/extras_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".HomeActivity"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.test.haseeb.shadhillitoolikthomepage.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".ismjalaalactivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/ism_name"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen"
+            android:parentActivityName=".extrasactivity"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.test.haseeb.shadhillitoolikthomepage.extrasactivity" />
+        </activity>
+        <activity
             android:name=".WirdActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/wird_name"

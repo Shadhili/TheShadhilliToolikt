@@ -223,5 +223,18 @@
         <item> The Description of our Shaykh </item>
         <item> After our Shaykh\'s passing and closing remarks </item>
 </string-array>
+    <string-array name="extratitles">
+        <item>Ismul-Jalaalah</item>
+        
+    </string-array>
+    <string-array name="extrasubtitles">
+        <item>Litanies of the Shadhili Way</item>
+        <item>An Introduction to the way of As-Shadhili</item>
+        <item>The founder of the Shadhili Way</item>
+        <item>The Golden Chain of the Shadhili Way</item>
+        <item>Daily Reminders for Awrad</item>
+        <item>Extra Features</item>
+        <item>Contact details to provide feedback.</item>
+    </string-array>
 
 </resources>
