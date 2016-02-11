@@ -63,7 +63,7 @@ public class mashishactivity extends AppCompatActivity {
         registerForContextMenu(mashishlist);
         ListAdapter listAdapter = mashishlist.getAdapter();
         ImageView a = new ImageView(this);
-        a.setImageResource(R.drawable.l1);
+        a.setImageResource(R.drawable.sm1);
         mashishlist.addHeaderView(a, null, false);
         ImageView b = new ImageView(this);
         b.setImageResource(R.drawable.scfooter);

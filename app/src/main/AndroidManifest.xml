@@ -36,16 +36,22 @@
         </activity>
         <activity
             android:name=".DhikrActivity"
-            android:configChanges="orientation|keyboardHidden"            android:label="@string/app_name"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/dhikr_name"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme" >
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".HomeActivity"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.test.haseeb.shadhillitoolikthomepage.HomeActivity" />
         </activity>
         <activity
             android:name=".WirdActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
-            android:parentActivityName=".DhikrActivity"
             android:label="@string/wird_name"
-             >
+            android:parentActivityName=".DhikrActivity"
+            >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.test.haseeb.shadhillitoolikthomepage.DhikrActivity" />
@@ -106,31 +112,307 @@
         </activity>
         <activity
             android:name=".bioactivity"
-            android:configChanges="keyboardHidden|screenSize"
-            android:label="@string/app_name"
-            android:parentActivityName=".HomeActivity" >
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:label="@string/bio_name"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait" >
+
+        <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.test.haseeb.shadhillitoolikthomepage.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".bioactivityc1"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:label="@string/bio_name"
+            android:parentActivityName=".bioactivity"
+             >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.test.haseeb.shadhillitoolikthomepage.DhikrActivity" />
+                android:value="com.test.haseeb.shadhillitoolikthomepage.bioactivity" />
+        </activity>
+        <activity
+            android:name=".bioactivityc2"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:label="@string/bio_name"
+            android:parentActivityName=".bioactivity"
+             >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.test.haseeb.shadhillitoolikthomepage.bioactivity" />
+        </activity>
+        <activity
+            android:name=".bioactivityc3"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:label="@string/bio_name"
+            android:parentActivityName=".bioactivity"
+             >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.test.haseeb.shadhillitoolikthomepage.bioactivity" />
+        </activity>
+        <activity
+            android:name=".bioactivityc4"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:label="@string/bio_name"
+            android:parentActivityName=".bioactivity"
+             >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.test.haseeb.shadhillitoolikthomepage.bioactivity" />
+        </activity>
+        <activity
+            android:name=".bioactivityc5"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:label="@string/bio_name"
+            android:parentActivityName=".bioactivity"
+             >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.test.haseeb.shadhillitoolikthomepage.bioactivity" />
+        </activity>
+        <activity
+            android:name=".bioactivityc6"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:label="@string/bio_name"
+            android:parentActivityName=".bioactivity"
+             >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.test.haseeb.shadhillitoolikthomepage.bioactivity" />
+        </activity>
+        <activity
+            android:name=".bioactivityc7"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:label="@string/bio_name"
+            android:parentActivityName=".bioactivity"
+             >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.test.haseeb.shadhillitoolikthomepage.bioactivity" />
+        </activity>
+        <activity
+            android:name=".bioactivityc8"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:label="@string/bio_name"
+            android:parentActivityName=".bioactivity"
+             >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.test.haseeb.shadhillitoolikthomepage.bioactivity" />
+        </activity>
+        <activity
+            android:name=".bioactivityc9"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:label="@string/bio_name"
+            android:parentActivityName=".bioactivity"
+             >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.test.haseeb.shadhillitoolikthomepage.bioactivity" />
+        </activity>
+        <activity
+            android:name=".bioactivityc10"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:label="@string/bio_name"
+            android:parentActivityName=".bioactivity"
+             >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.test.haseeb.shadhillitoolikthomepage.bioactivity" />
+        </activity>
+        <activity
+            android:name=".bioactivityc11"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:label="@string/bio_name"
+            android:parentActivityName=".bioactivity"
+             >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.test.haseeb.shadhillitoolikthomepage.bioactivity" />
+        </activity>
+        <activity
+            android:name=".bioactivityc12"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:label="@string/bio_name"
+            android:parentActivityName=".bioactivity"
+             >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.test.haseeb.shadhillitoolikthomepage.bioactivity" />
+        </activity>
+        <activity
+            android:name=".bioactivityc13"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:label="@string/bio_name"
+            android:parentActivityName=".bioactivity"
+             >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.test.haseeb.shadhillitoolikthomepage.bioactivity" />
+        </activity>
+        <activity
+            android:name=".bioactivityc14"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:label="@string/bio_name"
+            android:parentActivityName=".bioactivity"
+             >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.test.haseeb.shadhillitoolikthomepage.bioactivity" />
+        </activity>
+        <activity
+            android:name=".bioactivityc15"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:label="@string/bio_name"
+            android:parentActivityName=".bioactivity"
+             >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.test.haseeb.shadhillitoolikthomepage.bioactivity" />
+        </activity>
+        <activity
+            android:name=".bioactivityc16"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:label="@string/bio_name"
+            android:parentActivityName=".bioactivity"
+             >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.test.haseeb.shadhillitoolikthomepage.bioactivity" />
+        </activity>
+        <activity
+            android:name=".bioactivityc17"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:label="@string/bio_name"
+            android:parentActivityName=".bioactivity"
+             >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.test.haseeb.shadhillitoolikthomepage.bioactivity" />
+        </activity>
+        <activity
+            android:name=".bioactivityc18"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:label="@string/bio_name"
+            android:parentActivityName=".bioactivity"
+             >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.test.haseeb.shadhillitoolikthomepage.bioactivity" />
+        </activity>
+        <activity
+            android:name=".bioactivityc19"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:label="@string/bio_name"
+            android:parentActivityName=".bioactivity"
+             >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.test.haseeb.shadhillitoolikthomepage.bioactivity" />
+        </activity>
+        <activity
+            android:name=".bioactivityc20"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:label="@string/bio_name"
+            android:parentActivityName=".bioactivity"
+             >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.test.haseeb.shadhillitoolikthomepage.bioactivity" />
+        </activity>
+        <activity
+            android:name=".bioactivityc21"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:label="@string/bio_name"
+            android:parentActivityName=".bioactivity"
+             >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.test.haseeb.shadhillitoolikthomepage.bioactivity" />
+        </activity>
+        <activity
+            android:name=".bioactivityc22"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:label="@string/bio_name"
+            android:parentActivityName=".bioactivity"
+             >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.test.haseeb.shadhillitoolikthomepage.bioactivity" />
+        </activity>
+        <activity
+            android:name=".bioactivityc23"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:label="@string/bio_name"
+            android:parentActivityName=".bioactivity"
+             >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.test.haseeb.shadhillitoolikthomepage.bioactivity" />
+        </activity>
+        <activity
+            android:name=".bioactivityc24"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:label="@string/bio_name"
+            android:parentActivityName=".bioactivity"
+             >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.test.haseeb.shadhillitoolikthomepage.bioactivity" />
+        </activity>
+        <activity
+            android:name=".bioactivityc25"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:label="@string/bio_name"
+            android:parentActivityName=".bioactivity"
+             >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.test.haseeb.shadhillitoolikthomepage.bioactivity" />
         </activity>
         <activity
             android:name=".shadhilichainactivity"
-            android:configChanges="keyboardHidden|screenSize"
-            android:label="@string/app_name"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:label="@string/chain_name"
             android:parentActivityName=".HomeActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.test.haseeb.shadhillitoolikthomepage.DhikrActivity" />
+                android:value="com.test.haseeb.shadhillitoolikthomepage.HomeActivity" />
         </activity>
         <activity
             android:name=".feedbackactivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            android:label="@string/app_name"
+            android:configChanges="keyboardHidden|screenSize"
+            android:label="@string/feedback_name"
             android:parentActivityName=".HomeActivity"
             android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.test.haseeb.shadhillitoolikthomepage.DhikrActivity" />
+                android:value="com.test.haseeb.shadhillitoolikthomepage.HomeActivity" />
         </activity>
         <activity
             android:name=".remindersactivity"
@@ -140,7 +422,21 @@
             android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.test.haseeb.shadhillitoolikthomepage.DhikrActivity" />
+                android:value="com.test.haseeb.shadhillitoolikthomepage.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".introductionactivity"
+            android:label="@string/intro_name"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:parentActivityName=".HomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.test.haseeb.shadhillitoolikthomepage.HomeActivity" />
+        </activity>
+        <activity
+            android:name="com.test.haseeb.shadhillitoolikthomepage.MyPreferenceActivity"
+            android:label="Preferences"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".SplashActivity"

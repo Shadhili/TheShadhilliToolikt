@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="Reminders for your daily Awrad">
+
+        <CheckBoxPreference
+
+            android:key="checkBoxPref"
+            android:title="Select this checkbox to enable Reminders"
+            />
+
+        <ListPreference
+            android:dependency="checkBoxPref"
+            android:key="timezonepref"
+            android:title="Please select your Time Zone (UTC):"
+            android:summary="Reminders will be sent based on your local time."
+            android:entries="@array/timezone"
+            android:entryValues="@array/timezonevalues"
+            android:defaultValue="UTC±00:00"
+            />
+
+        <CheckBoxPreference
+            android:dependency="checkBoxPref"
+            android:key="checkBoxPref2"
+            android:title="Reminder for Wird ul Am - Morning"
+            android:summary="This reminder will be sent in the morning after Fajr Prayer."/>
+        <CheckBoxPreference
+            android:dependency="checkBoxPref"
+            android:key="checkBoxPref3"
+            android:title="Reminder for Wird ul Am - Evening"
+            android:summary="This reminder will be sent in the evening after Maghrib Prayer."/>
+        <CheckBoxPreference
+            android:dependency="checkBoxPref"
+            android:key="checkBoxPref4"
+            android:title="Reminder for Hizb ul Bahr - Afternoon"
+            android:summary="This reminder will be sent in the afternoon during 'Asr time."/>
+
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

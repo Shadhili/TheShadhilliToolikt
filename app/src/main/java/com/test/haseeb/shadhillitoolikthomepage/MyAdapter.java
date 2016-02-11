@@ -10,8 +10,14 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 class MyAdapter extends ArrayAdapter<String> {
-    public MyAdapter(Context context, String[]values) {
+
+    String[] titleArray;
+    String[] subtitleArray;
+
+    public MyAdapter(Context context, String[]values, String[]subtitles ) {
         super(context, R.layout.row_layout_2, values);
+        this.titleArray=values;
+        this.subtitleArray=subtitles;
     }
 
     @Override
@@ -23,11 +29,12 @@ class MyAdapter extends ArrayAdapter<String> {
                 parent, false);
 
 
-        String feature = getItem(position);
 
         TextView theTextView = (TextView) theView.findViewById(R.id.textview1);
+        TextView textView2 = (TextView) theView.findViewById(R.id.textview2);
 
-        theTextView.setText(feature);
+        theTextView.setText(titleArray[position]);
+        textView2.setText(subtitleArray[position]);
 
         ImageView theImageView = (ImageView) theView.findViewById(R.id.imageview1);
 

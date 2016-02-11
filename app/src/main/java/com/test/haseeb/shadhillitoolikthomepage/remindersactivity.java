@@ -10,6 +10,8 @@ import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
@@ -33,10 +35,16 @@ public class remindersactivity extends AppCompatActivity implements OnClickListe
     CheckBox checkbox1;
     CheckBox checkbox2;
     CheckBox checkbox3;
+    CheckBox checkbox0;
     private Spinner dropdown;
     String[] Timezone;
     private Toolbar toolbar;                              // Declaring the Toolbar Object
     LinearLayout reminderlayout;
+    String WirdMorning;
+    String WirdEvening;
+    String HizbBahr;
+    String dropdownvisibility;
+    TextView parseid;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,7 +65,9 @@ public class remindersactivity extends AppCompatActivity implements OnClickListe
         checkbox2.setOnClickListener(this);
         checkbox3 = (CheckBox) findViewById(R.id.checkbox3);
         checkbox3.setOnClickListener(this);
-
+        checkbox0 = (CheckBox) findViewById(R.id.remindercheckbox1);
+        checkbox0.setOnClickListener(this);
+        reminderlayout = (LinearLayout)findViewById(R.id.remindercontainer);
         dropdown = (Spinner)findViewById(R.id.spinner1);
         Timezone=res.getStringArray(R.array.timezone);
         ArrayAdapter<String>adapter = new ArrayAdapter<String>(remindersactivity.this,
@@ -67,18 +77,26 @@ public class remindersactivity extends AppCompatActivity implements OnClickListe
         dropdown.setAdapter(adapter);
         dropdown.setOnItemSelectedListener(this);
 
+        if (checkbox0.isChecked()) {
 
+            dropdown.setVisibility(View.VISIBLE);
+        }
+        else {
+            dropdown.setVisibility(View.GONE);
+            reminderlayout.setVisibility(View.GONE);
+        }
+
+
+        WirdMorning = "WirdMorning";
+        WirdEvening =  "WirdEvening";
+        HizbBahr =  "HizbBahr";
+        dropdownvisibility = "";
         loadSavedPreferences();
+
+
 
     }
     public void onItemSelected(AdapterView<?> parent, View v, int position, long id) {
-        LayoutInflater mInflater = getLayoutInflater();
-        final View mLayout = mInflater.inflate(R.layout.toast_layout, (ViewGroup) findViewById(R.id.toast_layout_root));
-        final TextView mText = (TextView) mLayout.findViewById(R.id.toast_text);
-        Toast mToast = new Toast(getApplicationContext());
-        mToast.setDuration(Toast.LENGTH_SHORT);
-        mToast.setView(mLayout);
-        reminderlayout = (LinearLayout)findViewById(R.id.remindercontainer);
         dropdown.getSelectedItemPosition();
         if (position >0) {
             reminderlayout.setVisibility(View.VISIBLE);
@@ -86,28 +104,40 @@ public class remindersactivity extends AppCompatActivity implements OnClickListe
         else {
             reminderlayout.setVisibility(View.GONE);
         }
+        savePreferences("spinnerSelection", dropdown.isSelected());
+
 
         switch (position) {
             case 0:
                 savePreferences("spinnerSelection", dropdown.isSelected());
-                break;
-            case 1:
-                savePreferences("spinnerSelection", dropdown.isSelected());
-                if (position==1) {
-                    ParsePush.subscribeInBackground("UTC00");
+                if (checkbox1.isChecked() || checkbox2.isChecked () || checkbox3.isChecked())   {
+                    checkbox1.setChecked(false);
+                    checkbox2.setChecked(false);
+                    checkbox3.setChecked(false);
                 }
                 else {
-                    ParsePush.unsubscribeInBackground("UTC00");
+                   //do nothing
                 }
+
+                break;
+            case 1: {
+                savePreferences("spinnerSelection", dropdown.isSelected());
+                if (position == 1) {
+                    WirdMorning = "UTC00";
+                } else {
+                    WirdMorning = "";
+                }
+            }
                 break;
             case 2:
+                checkbox1.setChecked(false);
                 savePreferences("spinnerSelection", dropdown.isSelected());
-                if (position==2) {
-                    ParsePush.subscribeInBackground("UTC+01");
+                if (position == 2) {
+                    WirdMorning = "UTC+01";
+                } else {
+                    WirdMorning = "";
                 }
-                else {
-                    ParsePush.unsubscribeInBackground("UTC+01");
-                }
+
                 break;
             case 3:
                 savePreferences("spinnerSelection", dropdown.isSelected());
@@ -334,9 +364,14 @@ public class remindersactivity extends AppCompatActivity implements OnClickListe
         } else {
             checkbox3.setChecked(false);
         }
+        boolean checkboxValue0 = sharedPreferences.getBoolean("CheckBox_Value0", false);
+        if (checkboxValue0) {
+            checkbox0.setChecked(true);
+        } else {
+            checkbox0.setChecked(false);
+        }
 
-        dropdown.setSelection(sharedPreferences.getInt("spinnerSelection",0));
-
+        dropdown.setSelection(sharedPreferences.getInt("spinnerSelection", 0));
 
     }
 
@@ -348,38 +383,50 @@ public class remindersactivity extends AppCompatActivity implements OnClickListe
 //removed   editor commit from this line
         int selectedPosition = dropdown.getSelectedItemPosition();
         editor.putInt("spinnerSelection", selectedPosition);
-
         editor.commit();
     }
 
     @Override
     public void onClick(View v) {
+
+
         savePreferences("CheckBox_Value", checkbox1.isChecked());
 
         if (checkbox1.isChecked()) {
 
-            ParsePush.subscribeInBackground("WirdMorning");
+            ParsePush.subscribeInBackground(WirdMorning);
         }
         else {
-            ParsePush.unsubscribeInBackground("WirdMorning");
+            ParsePush.unsubscribeInBackground(WirdMorning);
 
         }
         savePreferences("CheckBox_Value2", checkbox2.isChecked());
         if (checkbox2.isChecked()) {
 
-            ParsePush.subscribeInBackground("WirdEvening");
+            ParsePush.subscribeInBackground(WirdEvening);
         }
         else {
-            ParsePush.unsubscribeInBackground("WirdEvening");
+            ParsePush.unsubscribeInBackground(WirdEvening);
 
         }
         savePreferences("CheckBox_Value3", checkbox3.isChecked());
         if (checkbox3.isChecked()) {
 
-            ParsePush.subscribeInBackground("HizbBahr");
+            ParsePush.subscribeInBackground(HizbBahr);
         }
         else {
-            ParsePush.unsubscribeInBackground("HizbBahr");
+            ParsePush.unsubscribeInBackground(HizbBahr);
+
+        }
+        savePreferences("CheckBox_Value0", checkbox0.isChecked());
+        if (checkbox0.isChecked()) {
+
+            dropdown.setVisibility(View.VISIBLE);
+        }
+        else {
+            dropdown.setVisibility(View.GONE);
+            reminderlayout.setVisibility(View.GONE);
+
 
         }
 
@@ -393,12 +440,34 @@ public class remindersactivity extends AppCompatActivity implements OnClickListe
             Intent parentIntent1 = new Intent(this,DhikrActivity.class);
             startActivity(parentIntent1);
         }
+
+        switch(item.getItemId())
+        {
+            case R.id.preferences:
+            {
+                Intent intent = new Intent();
+                intent.setClassName(this, "com.test.haseeb.shadhillitoolikthomepage.MyPreferenceActivity");
+                startActivity(intent);
+                return true;
+            }
+        }
+
+
+
         return super.onOptionsItemSelected(item);
     }
 
     @Override
     public void onNothingSelected(AdapterView<?> adapterView) {
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu)
+    {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
+        return true;
     }
 
 }

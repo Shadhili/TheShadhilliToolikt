@@ -1,8 +1,10 @@
 package com.test.haseeb.shadhillitoolikthomepage;
 
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -12,25 +14,28 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 
 
-public class DhikrActivity extends ActionBarActivity {
+public class DhikrActivity extends AppCompatActivity {
 
     private Toolbar toolbar;                              // Declaring the Toolbar Object
-
+    String[] Titles;
+    String[] Subtitles;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dhikr);
+        Resources res=getResources();
+        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
+        setSupportActionBar(myToolbar);
+        myToolbar.setSubtitle("Litanies of the Shadhili Way");
 
-        toolbar = (Toolbar) findViewById(R.id.tool_bar); // Attaching the layout to the toolbar object
-        setSupportActionBar(toolbar);                   // Setting toolbar as the ActionBar with setSupportActionBar() call
+        assert getSupportActionBar() != null;
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+        Titles = res.getStringArray(R.array.dhikrtitles);
+        Subtitles = res.getStringArray(R.array.dhikrsubtitles);
 
-
-
-        final String[] Features = {"Wird ul 'Aam", "Hizb ul Bahr", "Hizb ul Nasr", "HasbunAllaah Dhikr", "Al-Latifiya Dhikr", "Salaat Al-Yaqoutiya", "Salaat Al-Mashishiya"};
-
-        ListAdapter theAdapter = new DhikrAdapter(this, Features);
+        ListAdapter theAdapter = new DhikrAdapter(this, Titles, Subtitles);
         final ListView dhikrlist  = (ListView) findViewById(R.id.dhikrlist);
         dhikrlist.setAdapter(theAdapter);
         dhikrlist.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -73,12 +78,6 @@ public class DhikrActivity extends ActionBarActivity {
     }
 
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_dhikr, menu);
-        return true;
-    }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -87,9 +86,12 @@ public class DhikrActivity extends ActionBarActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+
+        if (id == android.R.id.home) {
+            Intent parentIntent1 = new Intent(this,DhikrActivity.class);
+            startActivity(parentIntent1);
+
+
         }
 
         return super.onOptionsItemSelected(item);

@@ -15,7 +15,24 @@
                 android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
                 app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
-            <Spinner
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/customborder"
+        android:paddingLeft="15dp"
+        >
+    <CheckBox
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/remindercheckbox1"
+        android:text="@string/reminder_enable"
+        android:textColor="@color/textview1"
+        android:textSize="18sp"
+        android:paddingLeft="15dp" />
+    </RelativeLayout>
+
+
+    <Spinner
                 android:id="@+id/spinner1"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -23,13 +40,15 @@
                 android:layout_margin="5dp"
                 android:textSize="18sp"
                 android:background="#ffffff"
-                android:spinnerMode="dropdown" />
+                android:spinnerMode="dropdown"
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:id="@+id/remindercontainer">
+        android:id="@+id/remindercontainer"
+        >
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -42,6 +61,15 @@
         android:textColor="#ffffff"
         android:background="@color/textview1"
         />
+        <TextView
+            android:id="@+id/parseid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/WirdMorning"
+            android:textSize="12sp"
+            android:textColor="#ffffff"
+            android:background="@color/textview1"
+            />
 
 <RelativeLayout
     android:layout_width="fill_parent"

@@ -1,12 +1,10 @@
 package com.test.haseeb.shadhillitoolikthomepage;
 
 
-import android.app.Activity;
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Intent;
 import android.content.res.Resources;
-import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -23,45 +21,33 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class introductionactivity extends AppCompatActivity {
+public class bioactivityc13 extends AppCompatActivity {
 
     String[] Biography;
-
+    public int position;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_intro);
+        setContentView(R.layout.activity_bio);
         Resources res = getResources();
-        Biography = res.getStringArray(R.array.introduction);
-
-        LayoutInflater mInflater = getLayoutInflater();
-        final View mLayout = mInflater.inflate(R.layout.toast_layout, (ViewGroup) findViewById(R.id.toast_layout_root));
-        final TextView mText = (TextView) mLayout.findViewById(R.id.toast_text);
+        Biography = res.getStringArray(R.array.biographyc13);
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
-        myToolbar.setSubtitle("An Introduction to the way of As-Shadhili");
-
+        myToolbar.setSubtitle(R.string.c13);
         assert getSupportActionBar() != null;
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
         ListAdapter theAdapter = new bioadapter(this, Biography);
-        final ListView wirdlist = (ListView) findViewById(R.id.introlist);
+        final ListView wirdlist = (ListView) findViewById(R.id.biolist);
         wirdlist.setAdapter(theAdapter);
         registerForContextMenu(wirdlist);
         ListAdapter listAdapter = wirdlist.getAdapter();
         ImageView a = new ImageView(this);
-        a.setImageResource(R.drawable.intro1);
+        a.setImageResource(R.drawable.bio1);
         wirdlist.addHeaderView(a, null, false);
-        ImageView b = new ImageView(this);
-        b.setImageResource(R.drawable.scfooter);
-        wirdlist.addFooterView(b, null, false);
-        registerForContextMenu(wirdlist);
         a.setScaleType(ImageView.ScaleType.FIT_START);
         a.setAdjustViewBounds(true);
     }
-
-
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -75,10 +61,15 @@ public class introductionactivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+        // Get the info on which item was selected
+        AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) menuInfo;
+        // Retrieve the position at where you long pressed
+        position = info.position;
 
-        if (v.getId() == R.id.introlist) {
+        if (v.getId() == R.id.biolist) {
 
             String[] menuItems = getResources().getStringArray(R.array.menu2);
             for (int i = 0; i<menuItems.length; i++) {
@@ -93,7 +84,13 @@ public class introductionactivity extends AppCompatActivity {
         AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo)item.getMenuInfo();
         ClipboardManager clipboard = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
         String listItemName1 = Biography[info.position-1];
-
+        ListView wirdlist = (ListView) findViewById(R.id.biolist);
+        LayoutInflater mInflater = getLayoutInflater();
+        final View mLayout = mInflater.inflate(R.layout.toast_layout, (ViewGroup) findViewById(R.id.toast_layout_root));
+        final TextView mText = (TextView) mLayout.findViewById(R.id.toast_text);
+        Toast mToast = new Toast(getApplicationContext());
+        mToast.setDuration(Toast.LENGTH_SHORT);
+        mToast.setView(mLayout);
 
         if (item.getItemId() == 0) {
 
@@ -104,13 +101,8 @@ public class introductionactivity extends AppCompatActivity {
 
             ClipData clip = ClipData.newPlainText("simple text", listItemName1);
             clipboard.setPrimaryClip(clip);
-            LayoutInflater mInflater = getLayoutInflater();
-            final View mLayout = mInflater.inflate(R.layout.toast_layout, (ViewGroup) findViewById(R.id.toast_layout_root));
-            final TextView mText = (TextView) mLayout.findViewById(R.id.toast_text);
-            Toast mToast = new Toast(getApplicationContext());
+
             mText.setText("Text Copied");
-            mToast.setDuration(Toast.LENGTH_SHORT);
-            mToast.setView(mLayout);
             mToast.show();
         }
 
@@ -118,14 +110,4 @@ public class introductionactivity extends AppCompatActivity {
 
     }
 
-
-
-
-}
-
-
-
-
-
-
-
+    }

@@ -31,7 +31,7 @@
     <string name="latif_title">Al-Latifiyya Dhikr - The Most Subtle</string>
     <string name="hasbunallah_title">HasbunAllaah Dhikr - Allaah is sufficient for us</string>
     <string-array name="timezone">
-        <item> Please Select your Time Zone (UTC)</item>
+        <item> </item>
         <item>UTC±00:00 – London | Casablanca | Dublin </item>
         <item>UTC+01:00 – Madrid | Algiers | Copenhagen</item>
         <item>UTC+02:00 – Cairo | Damascus | Jerusalem</item>
@@ -56,7 +56,33 @@
         <item>UTC−09:00 – Alaska </item>
         <item>UTC−10:00 – Rarotonga | Hawaii</item>
         <item>UTC−11:00 – Alofi   </item>
-
+    </string-array>
+    <string-array name="timezonevalues">
+        <item>0</item>
+        <item>UTC±00:00</item>
+        <item>UTC+01:00</item>
+        <item>UTC+02:00</item>
+        <item>UTC+03:00</item>
+        <item>UTC+04:00</item>
+        <item>UTC+05:00</item>
+        <item>UTC+06:00</item>
+        <item>UTC+07:00</item>
+        <item>UTC+08:00</item>
+        <item>UTC+09:00</item>
+        <item>UTC+10:00</item>
+        <item>UTC+11:00</item>
+        <item>UTC+12:00</item>
+        <item>UTC−01:00</item>
+        <item>UTC−02:00</item>
+        <item>UTC−03:00</item>
+        <item>UTC−04:00</item>
+        <item>UTC−05:00</item>
+        <item>UTC−06:00</item>
+        <item>UTC−07:00</item>
+        <item>UTC−08:00</item>
+        <item>UTC−09:00</item>
+        <item>UTC−10:00</item>
+        <item>UTC−11:00</item>
     </string-array>
     <string-array name="wirdnumber">
         <item> Recite Once:</item>
@@ -1654,6 +1680,18 @@ Shaykh Abu al-Hasan Shadhili alayhir rahman died in Egypt, 656 Hijri - 1258 Comm
     <string name="latif_name">Al Latifiyya</string>
     <string name="hasbunallah_name">HasbunAllaah Dhikr</string>
     <string name="reminders_name">Reminders</string>
+    <string name="WirdMorning">\"WirdMorning\"</string>
+    <string name="WirdEvening">\"WirdEvening\"</string>
+    <string name="HizbBahr">\"HizbBahr\"</string>
+    <string name="reminder_enable">Do you wish to enable reminders?</string>
+    <string name="feedback_name">Feedback</string>
+    <string name="feedbackheader">If you wish to leave feedback on this App, report bugs and errors or provide suggestions then please email us: contact@bokehmedia.co.uk</string>
+    <string name="feedbackemail">haseeb@tgrs.co.uk</string>
+    <string name="dhikr_name">Awrad</string>
+    <string name="webaddress">www.bokehmedia.co.uk</string>
+    <string name="intro_name">The Shadhili Way</string>
+    <string name="chain_name">The Shadhili Chain</string>
+    <string name="bio_name">The Biography of Imam Abul Hasan As-Shadhili</string>
 
     <string-array name="menu">
         <item>Copy Translation</item>
@@ -1665,6 +1703,80 @@ Shaykh Abu al-Hasan Shadhili alayhir rahman died in Egypt, 656 Hijri - 1258 Comm
         <item>Copy Text</item>
 
     </string-array>
+    <string-array name="menu3">
+        <item>Copy English</item>
+        <item>Copy Arabic</item>
+        <item>Copy All</item>
+    </string-array>
+    <string-array name="menubio">
+        <item>Copy Text</item>
+        <item>Set Bookmark</item>
+        <item>Remove Bookmark</item>
+    </string-array>
+
+    <string-array name="dhikrtitles">
+        <item>Al Wird ul \'Aam</item>
+        <item>Hizb ul Bahr</item>
+        <item>Hizb ul Nasr</item>
+        <item>HasbunAllaah Dhikr</item>
+        <item>Al-Latifiyya Dhikr</item>
+        <item>Salaat Al-Yaqoutiya</item>
+        <item>Salaat Al-Mashishiya</item>
+    </string-array>
+    <string-array name="dhikrsubtitles">
+        <item>The General Litany</item>
+        <item>The Litany of the Sea</item>
+        <item>The Litany of Victory</item>
+        <item>Allaah is Sufficient for us</item>
+        <item>The Most Subtle</item>
+        <item>The Salutation of the Resplendent Sapphire</item>
+        <item>The Salutation of Al-Mashish</item>
+    </string-array>
+    <string-array name="hometitles">
+        <item>Awrad</item>
+        <item>The Shadhili Way</item>
+        <item>The Biography of Imam Abul Hasan As-Shadhili</item>
+        <item>The Shadhili Chain</item>
+        <item>Reminders</item>
+        <item>Extras</item>
+        <item>Feedback</item>
+    </string-array>
+    <string-array name="homesubtitles">
+        <item>Litanies of the Shadhili Way</item>
+        <item>An Introduction to the way of As-Shadhili</item>
+        <item>The founder of the Shadhili Way</item>
+        <item>The Golden Chain of the Shadhili Way</item>
+        <item>Daily Reminders for Awrad</item>
+        <item>Extra Features</item>
+        <item>Contact details to provide feedback.</item>
+    </string-array>
+    <string name="c1">The Birth of our Shaykh </string>
+    <string name="c2">The Early Life our Shaykh</string>
+    <string name="c3">Our Shaykh\'s search for the Qutb of the Age </string>
+    <string name="c4">Finding the Qutb </string>
+    <string name="c5">Departure to Shādhilah </string>
+    <string name="c6">Receiving his nisbah ash-Shādhili and his orders </string>
+    <string name="c7">Move to Tunis and meeting al-Khidr (May Allaah\'s mercy be upon him) </string>
+    <string name="c8">The Envy of ibn al Bara </string>
+    <string name="c9">The Envy of ibn al Bara continued </string>
+    <string name="c10">The Envy of ibn al Bara continued (2) </string>
+    <string name="c11">Our Shaykh\'s Return to Tunis and Meeting Abul \'Abbas al Mursi (May Allaah\'s mercy be upon him) </string>
+    <string name="c12">The instruction to move to Al-Iskandariyyah (Alexandria, Egypt) </string>
+    <string name="c13">The Journey to Egypt </string>
+    <string name="c14">Our Shaykh\'s arrival in al-Iskandariyyah </string>
+    <string name="c15">The Discourse of our Shaykh </string>
+    <string name="c16">Our Shaykh\'s gatherings </string>
+    <string name="c17">Our Shaykh\'s gatherings continued </string>
+    <string name="c18">Letters to his Muridun </string>
+    <string name="c19">The Jihad of our Shaykh  </string>
+    <string name="c20">10 years after entering al-\'Iskandariyah and our Shaykh\'s final Hajj </string>
+    <string name="c21">Departure for Hajj  </string>
+    <string name="c22">Shaykh Sharaf ad-Din\'s account of the last days of Our Shaykh </string>
+    <string name="c23">The Passing of our Shaykh </string>
+    <string name="c24"> The Description of our Shaykh </string>
+    <string name="c25">After our Shaykh\'s passing and closing remarks </string>
+
+
     <string-array name="biography">
         <item>The name of our Shaykh was ‘Ali ibn ‘Abd Allaah Ibn ‘Abd al-Jabbar and he was of ‘Alid descent of the Fatimid-Hasanid line on his father’s side and of Fatimid-Husaynid on his mother’s side. He was born in the small village of Ghumarah in the Rif [northern Atlas] mountains of the Maghrib in the year 593 of the Flight [1196]. The village is situated in a round valley surrounded on all sides by mountains and dominated by a large mountain rising up almost directly in the centre of the valley. This mountain, Jabal ‘Alam, [Flag Mountain], was to play a very significant part in the life of our Shaykh. Ghumarah, near to the base of the mountain, was a stronghold of orthodox Islam in a sea of heterodox Berber clans much devoted to magic, in which the shurafa were traditionally the propagators and guarantors of orthopractic Islam as well as, by dint of being of the Idrisid line, the local aristocracy in the true sense of the meaning of that word.</item>
 <item>Little is known about his very early life, though, as a member of the shurafā {ahlul-bayt} we can extrapolate that from a very early age he was tutored intensively first by his mother and then by his father and the local ‘ulamā in all aspects of the Din. The deep dedication and devotion to Islam that prevails among the great majority of the shurafā {especially those untouched by connection to positions of worldly rule} is a well known phenomenon which prevails to the present day all across the Muslim world. </item>

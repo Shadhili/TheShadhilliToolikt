@@ -2,6 +2,7 @@ package com.test.haseeb.shadhillitoolikthomepage;
 
 import android.content.Context;
 import android.content.res.AssetManager;
+import android.graphics.Color;
 import android.graphics.Typeface;
 import android.text.Html;
 import android.view.LayoutInflater;
@@ -10,7 +11,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-class bioadapter extends ArrayAdapter<String> {
+class bioadapter2 extends ArrayAdapter<String> {
     private AssetManager assets;
 
     Typeface font = Typeface.createFromAsset(getContext().getAssets(),
@@ -23,8 +24,8 @@ class bioadapter extends ArrayAdapter<String> {
 
 
 
-    public bioadapter(Context context, String[] titles) {
-        super(context, R.layout.row_layout_bio, R.id.textview2,titles);
+    public bioadapter2(Context context, String[] titles) {
+        super(context, R.layout.row_layout_bio2, R.id.textview2,titles);
         this.bioArray=titles;
 
     }
@@ -43,7 +44,6 @@ class bioadapter extends ArrayAdapter<String> {
         TextView Biography = (TextView) theView.findViewById(R.id.bio_content);
 
         Biography.setText(bioArray[position]);
-
         Biography.setTypeface(font);
 
         String text =bioArray[position];

@@ -1,14 +1,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="55dp"
     android:orientation="horizontal"
     tools:context=".MainActivity">
-
-
-
-
-    <ImageView
+ <ImageView
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_marginLeft="10dp"
@@ -16,27 +12,29 @@
         android:src="@drawable/actionbar"
         android:id="@+id/imageview1"
         />
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textview1"
         android:textSize="20sp"
-        android:padding="15dp"
-
+        android:paddingTop="5dp"
+        android:paddingLeft="15dp"
         >
-
     </TextView>
-
-
-
-
-
-
-
-
-
-
-
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview2"
+        android:textSize="12sp"
+        android:paddingLeft="15dp"
+        >
+    </TextView>
+    </LinearLayout>
 </LinearLayout>

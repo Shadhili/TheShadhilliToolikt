@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<preference-headers
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <header
+        android:fragment="com.test.haseeb.shadhillitoolikthomepage.MyPreferenceFragment"
+        android:title="Awrad Preferences"
+        android:summary="Please click here to configure your Awrad reminder preferences."
+
+        />
+
+</preference-headers>

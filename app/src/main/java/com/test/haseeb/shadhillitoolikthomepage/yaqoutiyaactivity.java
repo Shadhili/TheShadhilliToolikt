@@ -62,7 +62,7 @@ public class yaqoutiyaactivity extends AppCompatActivity {
         registerForContextMenu(yaqoutiyalist);
         ListAdapter listAdapter = yaqoutiyalist.getAdapter();
         ImageView a = new ImageView(this);
-        a.setImageResource(R.drawable.l1);
+        a.setImageResource(R.drawable.y1);
         yaqoutiyalist.addHeaderView(a, null, false);
         ImageView b = new ImageView(this);
         b.setImageResource(R.drawable.scfooter);
