@@ -44,31 +44,31 @@ public class DhikrActivity extends AppCompatActivity {
 
 
                 if (position == 0) {
-                    Intent myIntent = new Intent(getApplicationContext(), WirdActivity.class);
-                    startActivity(myIntent);
-                }
-                if (position == 1) {
-                    Intent myIntent = new Intent(getApplicationContext(), hizbbahractivity.class);
-                    startActivity(myIntent);
-                }
-                if (position == 2) {
-                    Intent myIntent = new Intent(getApplicationContext(), nasractivity.class);
-                    startActivity(myIntent);
-                }
-                if (position == 3) {
-                    Intent myIntent = new Intent(getApplicationContext(), hasbunallahactivity.class);
-                    startActivity(myIntent);
-                }
-                if (position == 4) {
                     Intent myIntent = new Intent(getApplicationContext(), latifactivity.class);
                     startActivity(myIntent);
                 }
+                if (position == 1) {
+                    Intent myIntent = new Intent(getApplicationContext(), WirdActivity.class);
+                    startActivity(myIntent);
+                }
+                if (position == 2) {
+                    Intent myIntent = new Intent(getApplicationContext(), hasbunallahactivity.class);
+                    startActivity(myIntent);
+                }
+                if (position == 3) {
+                    Intent myIntent = new Intent(getApplicationContext(), hizbbahractivity.class);
+                    startActivity(myIntent);
+                }
+                if (position == 4) {
+                    Intent myIntent = new Intent(getApplicationContext(), nasractivity.class);
+                    startActivity(myIntent);
+                }
                 if (position == 5) {
-                    Intent myIntent = new Intent(getApplicationContext(), yaqoutiyaactivity.class);
+                    Intent myIntent = new Intent(getApplicationContext(), mashishactivity.class);
                     startActivity(myIntent);
                 }
                 if (position == 6) {
-                    Intent myIntent = new Intent(getApplicationContext(), mashishactivity.class);
+                    Intent myIntent = new Intent(getApplicationContext(), yaqoutiyaactivity.class);
                     startActivity(myIntent);
                 }
 
