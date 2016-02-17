@@ -1,13 +1,17 @@
 package com.test.haseeb.shadhillitoolikthomepage;
 
 import android.app.Activity;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceFragment;
 import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
+import android.preference.SwitchPreference;
 import android.util.Log;
+import android.view.View;
+import android.widget.ToggleButton;
 
 import com.parse.ParseException;
 import com.parse.ParsePush;
@@ -21,9 +25,8 @@ import java.util.List;
  */
 public class MyPreferenceActivity extends PreferenceActivity {
 
-
+        SwitchPreference switch1;
         ListPreference timezone;
-        CheckBoxPreference checkbox1;
         CheckBoxPreference checkbox2;
         CheckBoxPreference checkbox3;
         CheckBoxPreference checkbox4;
@@ -64,29 +67,42 @@ public class MyPreferenceActivity extends PreferenceActivity {
                     else {
                         ParsePush.unsubscribeInBackground(HizbBahr);
                     }
-                    if (checkbox1.isChecked()) {
 
-                    }
-                    else {
-                        checkbox2.setChecked(false);
-                        checkbox3.setChecked(false);
-                        checkbox4.setChecked(false);
-
-                    }
                     return true;
                 }
             };
-            checkbox1 = (CheckBoxPreference)findPreference("checkBoxPref");
             checkbox2 = (CheckBoxPreference)findPreference("checkBoxPref2");
             checkbox3 = (CheckBoxPreference) findPreference("checkBoxPref3");
             checkbox4 = (CheckBoxPreference) findPreference("checkBoxPref4");
-            checkbox1.setOnPreferenceClickListener(listener);
             checkbox2.setOnPreferenceClickListener(listener);
             checkbox3.setOnPreferenceClickListener(listener);
             checkbox4.setOnPreferenceClickListener(listener);
+            switch1 = (SwitchPreference) findPreference("switchpref");
+            switch1.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
+                @Override
+                public boolean onPreferenceChange(Preference preference, Object o) {
+                    boolean remindersOn = (Boolean) o;
+
+                    if (remindersOn) {
+
+                    } else {
+                        checkbox2.setChecked(false);
+                        checkbox3.setChecked(false);
+                        checkbox4.setChecked(false);
+                        ParsePush.unsubscribeInBackground(WirdMorning);
+                        ParsePush.unsubscribeInBackground(WirdEvening);
+                        ParsePush.unsubscribeInBackground(HizbBahr);
+
+                    }
+
+                    return true;
+                }
+            });
+
+
             timezone.setOnPreferenceChangeListener(new
-                                                           Preference.OnPreferenceChangeListener() {
-                                                               public boolean onPreferenceChange(Preference preference, Object newValue) {
+                   Preference.OnPreferenceChangeListener() {
+                       public boolean onPreferenceChange(Preference preference, Object newValue) {
                        final String val = newValue.toString();
                        int index = timezone.findIndexOfValue(val);
                        if (index == 1) {
@@ -285,7 +301,11 @@ public class MyPreferenceActivity extends PreferenceActivity {
                        return true;
                    }
                                                            });
-        }}
+        }
+
+
+
+}
 
 
 
