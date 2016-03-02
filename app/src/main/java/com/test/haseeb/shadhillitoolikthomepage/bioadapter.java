@@ -44,7 +44,7 @@ class bioadapter extends ArrayAdapter<String> {
 
         Biography.setText(bioArray[position]);
 
-        Biography.setTypeface(font);
+        Biography.setTypeface(font2);
 
         String text =bioArray[position];
         Biography.setText(Html.fromHtml(text));

@@ -44,7 +44,7 @@ class bioadapter2 extends ArrayAdapter<String> {
         TextView Biography = (TextView) theView.findViewById(R.id.bio_content);
 
         Biography.setText(bioArray[position]);
-        Biography.setTypeface(font);
+        Biography.setTypeface(font2);
 
         String text =bioArray[position];
         Biography.setText(Html.fromHtml(text));
