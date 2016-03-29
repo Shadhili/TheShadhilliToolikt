@@ -1,6 +1,9 @@
 package com.test.haseeb.shadhillitoolikthomepage;
 
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
@@ -11,6 +14,11 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
+
+import com.pushwoosh.BasePushMessageReceiver;
+import com.pushwoosh.BaseRegistrationReceiver;
+import com.pushwoosh.PushManager;
 
 public class HomeActivity extends ActionBarActivity { /* When using Appcombat support library
                                                          you need to extend Main Activity to
@@ -57,16 +65,25 @@ public class HomeActivity extends ActionBarActivity { /* When using Appcombat su
             {Intent myIntent = new Intent(getApplicationContext(), shadhilichainactivity.class);
             startActivity(myIntent);}
         if (position == 4)
-            {Intent myIntent = new Intent(getApplicationContext(), MyPreferenceActivity.class);
-                startActivity(myIntent);}
-        if (position == 5)
             {Intent myIntent = new Intent(getApplicationContext(), extrasactivity.class);
             startActivity(myIntent);}
+        if (position == 5)
+            {Intent myIntent = new Intent(getApplicationContext(), supportactivity.class);
+            startActivity(myIntent);}
         if (position == 6)
-            {Intent myIntent = new Intent(getApplicationContext(), feedbackactivity.class);
+        {Intent myIntent = new Intent(getApplicationContext(), feedbackactivity.class);
             startActivity(myIntent);}
                 }
                 });
+        Intent intent= getIntent();
+
+
+
+    }
+
+
+
+
 
     }
 
@@ -76,4 +93,4 @@ public class HomeActivity extends ActionBarActivity { /* When using Appcombat su
 
 
 
-}
+

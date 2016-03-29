@@ -22,23 +22,17 @@ class shadhilichainadapter extends ArrayAdapter<String> {
     String[] titleArray;
     String[] descriptionArray;
     int[] headerimg = {R.drawable.schead};
-    int[] footerimg = {R.drawable.scfooter};
 
 
-    public shadhilichainadapter(Context context, String[] titles, String[] desc, int[] hd, int[] ft) {
+    public shadhilichainadapter(Context context, String[] titles, String[] desc, int[] hd) {
         super(context, R.layout.row_layout_4, R.id.textview2,titles);
         this.titleArray=titles;
         this.descriptionArray=desc;
         this.headerimg=hd;
-        this.footerimg=ft;
     }
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-
-
-
-
 
         LayoutInflater theInflater = LayoutInflater.from(getContext());
 
@@ -46,12 +40,9 @@ class shadhilichainadapter extends ArrayAdapter<String> {
         View imageview = theInflater.inflate(R.layout.header, parent, false);
 
         ImageView header = (ImageView) imageview.findViewById(R.id.schead);
-        ImageView footer = (ImageView) imageview.findViewById(R.id.scfooter);
-
 
         TextView Arabic = (TextView) theView.findViewById(R.id.textview2);
         TextView Translation = (TextView) theView.findViewById(R.id.translation);
-
 
         Arabic.setText(titleArray[position]);
         Translation.setText(descriptionArray[position]);
@@ -59,12 +50,9 @@ class shadhilichainadapter extends ArrayAdapter<String> {
         Arabic.setTypeface(font);
         Translation.setTypeface(font2);
 
-
         String text =descriptionArray[position];
         Translation.setText(Html.fromHtml(text));
         return theView;
-
-
     }
 
 

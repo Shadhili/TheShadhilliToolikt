@@ -10,11 +10,17 @@
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" />
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" />
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" />
+    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
-    <!--
-      IMPORTANT: Change "com.parse.starter.permission.C2D_MESSAGE" in the lines below
-      to match your app's package name + ".permission.C2D_MESSAGE".
-    -->
+
     <permission android:protectionLevel="signature"
         android:name="com.test.haseeb.shadhillitoolikthomepage.permission.C2D_MESSAGE" />
     <uses-permission android:name="com.test.haseeb.shadhillitoolikthomepage.permission.C2D_MESSAGE" />
@@ -24,7 +30,10 @@
         android:icon="@mipmap/ic_launcher3"
         android:label="The Golden Chain"
         android:theme="@style/AppTheme"
+
         >
+        <meta-data android:name="PW_APPID" android:value="10C4A-FC8CF" />
+        <meta-data android:name="PW_PROJECT_ID" android:value="A196352399748" />
         <activity
             android:name=".SetPreferenceActivity"
             android:label="@string/app_name" >
@@ -473,27 +482,26 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <service android:name="com.parse.PushService" />
-        <receiver android:name="com.parse.ParsePushBroadcastReceiver"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.parse.push.intent.RECEIVE" />
-                <action android:name="com.parse.push.intent.DELETE" />
-                <action android:name="com.parse.push.intent.OPEN" />
-            </intent-filter>
-        </receiver>
-        <receiver android:name="com.parse.GcmBroadcastReceiver"
-            android:permission="com.google.android.c2dm.permission.SEND">
+
+        <activity android:name="com.pushwoosh.richpages.RichPageActivity" />
+        <activity android:name="com.pushwoosh.MessageActivity" />
+        <activity android:name="com.pushwoosh.PushHandlerActivity" />
+        <service android:name="com.pushwoosh.GCMRegistrationService" />
+        <service android:name="com.pushwoosh.GCMInstanceIDListenerService" />
+        <service android:name="com.pushwoosh.GCMListenerService" />
+        <receiver android:name="com.pushwoosh.local.AlarmReceiver" />
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+
+        <service android:name="com.pushwoosh.inapp.InAppRetrieverService" />
+        <receiver android:name="com.google.android.gms.gcm.GcmReceiver" android:exported="true" android:permission="com.google.android.c2dm.permission.SEND">
             <intent-filter>
                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
-
-                <!--
-                  IMPORTANT: Change "com.parse.starter" to match your app's package name.
-                -->
                 <category android:name="com.test.haseeb.shadhillitoolikthomepage" />
             </intent-filter>
         </receiver>
+
+
     </application>
 
 </manifest>

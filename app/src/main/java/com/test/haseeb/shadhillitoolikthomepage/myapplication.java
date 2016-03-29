@@ -14,8 +14,7 @@ public class myapplication extends android.app.Application {
     public void onCreate() {
         super.onCreate();
 
-        Parse.initialize(this, "froHxAVu9cNArGo3acLl7G7udg546o2SrioCwa9W", "FCQhZ07xQ4FAxoSvBfzMIkqxhoeU6cZE8C5xXDA9");
-        ParseInstallation.getCurrentInstallation().saveInBackground();
+
     }
 
 }

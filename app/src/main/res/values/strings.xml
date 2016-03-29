@@ -1737,8 +1737,8 @@ Shaykh Abu al-Hasan Shadhili alayhir rahman died in Egypt, 656 Hijri - 1258 Comm
         <item>The Shadhili Way</item>
         <item>The Biography of Imam Abul Hasan Ash-Shadhili</item>
         <item>The Shadhili Chain</item>
-        <item>Reminders</item>
         <item>Extras</item>
+        <item>Support Us</item>
         <item>Feedback</item>
     </string-array>
     <string-array name="homesubtitles">
@@ -1746,8 +1746,8 @@ Shaykh Abu al-Hasan Shadhili alayhir rahman died in Egypt, 656 Hijri - 1258 Comm
         <item>An Introduction to the way of Ash-Shadhili</item>
         <item>The Founder of the Shadhili Way</item>
         <item>The Golden Chain of the Shadhili Way</item>
-        <item>Daily Reminders for Awrad</item>
-        <item>Extra Features</item>
+        <item>Extra features</item>
+        <item>Support our projects</item>
         <item>Contact details to provide feedback.</item>
     </string-array>
     <string name="c1">The Birth of our Shaykh </string>
@@ -1777,7 +1777,7 @@ Shaykh Abu al-Hasan Shadhili alayhir rahman died in Egypt, 656 Hijri - 1258 Comm
     <string name="c25">After our Shaykh\'s passing and closing remarks </string>
     <string name="extras_name">Extras</string>
     <string name="ism_name">Ismul Jalaalah</string>
-
+    <string name="gmslink"><a href="http://www.greenmountainschool.org/">Please click here to support the Green Mountain School</a></string>
 
     <string-array name="biography">
         <item>The name of our Shaykh was ‘Ali ibn ‘Abd Allāh Ibn ‘Abd al-Jabbar and he was of ‘Alid descent of the Fatimid-Hasanid line on his father’s side and of Fatimid-Husaynid on his mother’s side. He was born in the small village of Ghumarah in the Rif [northern Atlas] mountains of the Maghrib in the year 593 of the Flight [1196]. The village is situated in a round valley surrounded on all sides by mountains and dominated by a large mountain rising up almost directly in the centre of the valley. This mountain, Jabal ‘Alam, [Flag Mountain], was to play a very significant part in the life of our Shaykh. Ghumarah, near to the base of the mountain, was a stronghold of orthodox Islam in a sea of heterodox Berber clans much devoted to magic, in which the shurafa were traditionally the propagators and guarantors of orthopractic Islam as well as, by dint of being of the Idrisid line, the local aristocracy in the true sense of the meaning of that word.</item>

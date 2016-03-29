@@ -5,21 +5,29 @@ import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Intent;
 import android.content.res.Resources;
+import android.graphics.Paint;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.ContextMenu;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AbsListView;
 import android.widget.AdapterView;
+import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.util.zip.Inflater;
 
 public class bioactivityc1 extends AppCompatActivity {
 
@@ -47,6 +55,8 @@ public class bioactivityc1 extends AppCompatActivity {
         wirdlist.addHeaderView(a, null, false);
         a.setScaleType(ImageView.ScaleType.FIT_START);
         a.setAdjustViewBounds(true);
+        View footerView = View.inflate(this, R.layout.footer, null);
+        wirdlist.addFooterView(footerView);
     }
 
     @Override

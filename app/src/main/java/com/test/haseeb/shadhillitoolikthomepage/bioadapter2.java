@@ -5,6 +5,7 @@ import android.content.res.AssetManager;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.text.Html;
+import android.text.util.Linkify;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -48,6 +49,7 @@ class bioadapter2 extends ArrayAdapter<String> {
 
         String text =bioArray[position];
         Biography.setText(Html.fromHtml(text));
+        Biography.setAutoLinkMask(Linkify.WEB_URLS);
         return theView;
 
 

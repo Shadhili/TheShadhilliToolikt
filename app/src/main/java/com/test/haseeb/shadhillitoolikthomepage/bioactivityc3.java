@@ -47,6 +47,8 @@ public class bioactivityc3 extends AppCompatActivity {
         wirdlist.addHeaderView(a, null, false);
         a.setScaleType(ImageView.ScaleType.FIT_START);
         a.setAdjustViewBounds(true);
+        View footerView = View.inflate(this, R.layout.footer, null);
+        wirdlist.addFooterView(footerView);
     }
 
     @Override
@@ -60,7 +62,6 @@ public class bioactivityc3 extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-
 
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {

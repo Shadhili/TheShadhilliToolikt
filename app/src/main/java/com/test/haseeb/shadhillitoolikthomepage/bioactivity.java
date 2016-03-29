@@ -1,6 +1,7 @@
 package com.test.haseeb.shadhillitoolikthomepage;
 
 
+import android.animation.ObjectAnimator;
 import android.app.Activity;
 import android.content.ClipData;
 import android.content.ClipboardManager;
@@ -8,6 +9,7 @@ import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Color;
 import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -15,6 +17,7 @@ import android.view.ContextMenu;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -39,7 +42,7 @@ public class bioactivity extends AppCompatActivity {
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
 
-        myToolbar.setSubtitle("The founder of the Shadhili Way");
+        myToolbar.setSubtitle("The Founder of the Shadhili Way");
 
         assert getSupportActionBar() != null;
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -49,11 +52,30 @@ public class bioactivity extends AppCompatActivity {
         wirdlist.setAdapter(theAdapter);
         registerForContextMenu(wirdlist);
         ListAdapter listAdapter = wirdlist.getAdapter();
+
         ImageView a = new ImageView(this);
         a.setImageResource(R.drawable.bio1);
         wirdlist.addHeaderView(a, null, false);
         a.setScaleType(ImageView.ScaleType.FIT_START);
         a.setAdjustViewBounds(true);
+
+        ImageView b = new ImageView(this);
+        b.setImageResource(R.drawable.gmsbtn);
+        wirdlist.addFooterView(b);
+        b.setScaleType(ImageView.ScaleType.FIT_START);
+        b.setAdjustViewBounds(true);
+        b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Uri uri = Uri.parse("http://www.greenmountainschool.org"); // missing 'http://' will cause crashed
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
+
+            }
+        });
+
+
         wirdlist.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> AdapterView, View view, int position, long id) {

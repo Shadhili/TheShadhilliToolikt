@@ -47,6 +47,9 @@ public class bioactivityc8 extends AppCompatActivity {
         wirdlist.addHeaderView(a, null, false);
         a.setScaleType(ImageView.ScaleType.FIT_START);
         a.setAdjustViewBounds(true);
+        View footerView = View.inflate(this, R.layout.footer, null);
+        wirdlist.addFooterView(footerView);
+
     }
 
     @Override
