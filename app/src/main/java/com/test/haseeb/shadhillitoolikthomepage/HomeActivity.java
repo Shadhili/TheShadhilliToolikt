@@ -14,11 +14,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
 
-import com.pushwoosh.BasePushMessageReceiver;
-import com.pushwoosh.BaseRegistrationReceiver;
-import com.pushwoosh.PushManager;
 
 public class HomeActivity extends ActionBarActivity { /* When using Appcombat support library
                                                          you need to extend Main Activity to

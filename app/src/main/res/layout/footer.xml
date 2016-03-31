@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent" android:layout_height="fill_parent"
-    android:padding="15dip">
+    >
 
-    <Button
+    <ImageView
         android:id="@+id/footerbutton"
-        android:layout_width="fill_parent"
-        android:layout_height="80dp"
-        android:text="@string/gmslink"
-        android:textColor="@color/white"
-        android:textSize="12sp"
-        android:textAllCaps="false"
-        android:layout_alignParentLeft="true"
-        android:background="@color/gold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gmsbtn"
         android:autoLink="web"
-        android:textColorLink="@color/white"
+        android:text="http://www.greenmountainschool.org"
+        android:adjustViewBounds="true"
+        android:scaleType="fitStart"
         />
 
 </RelativeLayout>

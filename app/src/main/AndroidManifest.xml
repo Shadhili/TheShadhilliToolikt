@@ -69,6 +69,18 @@
                 android:value="com.test.haseeb.shadhillitoolikthomepage.HomeActivity" />
         </activity>
         <activity
+            android:name=".supportactivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/support_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".HomeActivity"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.test.haseeb.shadhillitoolikthomepage.HomeActivity" />
+        </activity>
+        <activity
             android:name=".ismjalaalactivity"
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/ism_name"
@@ -448,16 +460,6 @@
                 android:value="com.test.haseeb.shadhillitoolikthomepage.HomeActivity" />
         </activity>
         <activity
-            android:name=".remindersactivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            android:label="@string/reminders_name"
-            android:parentActivityName=".HomeActivity"
-            android:screenOrientation="portrait" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.test.haseeb.shadhillitoolikthomepage.HomeActivity" />
-        </activity>
-        <activity
             android:name=".introductionactivity"
             android:label="@string/intro_name"
             android:configChanges="keyboardHidden|orientation|screenSize"
@@ -465,11 +467,6 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.test.haseeb.shadhillitoolikthomepage.HomeActivity" />
-        </activity>
-        <activity
-            android:name="com.test.haseeb.shadhillitoolikthomepage.MyPreferenceActivity"
-            android:label="Preferences"
-            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".SplashActivity"
@@ -482,24 +479,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name="com.pushwoosh.richpages.RichPageActivity" />
-        <activity android:name="com.pushwoosh.MessageActivity" />
-        <activity android:name="com.pushwoosh.PushHandlerActivity" />
-        <service android:name="com.pushwoosh.GCMRegistrationService" />
-        <service android:name="com.pushwoosh.GCMInstanceIDListenerService" />
-        <service android:name="com.pushwoosh.GCMListenerService" />
-        <receiver android:name="com.pushwoosh.local.AlarmReceiver" />
-            android:exported="true"
-            android:permission="com.google.android.c2dm.permission.SEND" >
-
-        <service android:name="com.pushwoosh.inapp.InAppRetrieverService" />
-        <receiver android:name="com.google.android.gms.gcm.GcmReceiver" android:exported="true" android:permission="com.google.android.c2dm.permission.SEND">
-            <intent-filter>
-                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-                <category android:name="com.test.haseeb.shadhillitoolikthomepage" />
-            </intent-filter>
-        </receiver>
 
 
     </application>

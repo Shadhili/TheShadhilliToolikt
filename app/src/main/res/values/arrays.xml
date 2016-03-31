@@ -270,7 +270,6 @@
         <item> The Passing of our Shaykh </item>
         <item> The Description of our Shaykh </item>
         <item> After our Shaykh\'s passing and closing remarks </item>
-        <item> </item>
         <item> Taken from The School of the Shadhdhuliyyah, Volume 1, Orisons. Written by Shaykh \'Abdullah Nurudin Durkee. This work is available online at Greenmountainschool.org ISBN-10: 9770018309. Both Volume 1 and 2 are available in Hard and Soft cover printings. </item>
         <item> Please support the works of Shaykh Nurudin Durkee and the Green Mountain School who have sponsored this project and given permission for us to use their works free of charge for the sake of the Shadhili Way. </item>
         <item> Also available from Greenmountainschool.org are numerous Ahzab and Awrad of the Shadhdhuli Tariqa in inexpensive, small paperback form. These works are written in clear, original Arabic along with translation and transliteration. </item>
@@ -283,5 +282,20 @@
         <item>The Grand Name</item>
 
     </string-array>
+    <string-array name="supportlist">
+        <item>The following organisations were fundamental to the success of this project. Click the organisation to go to their website.</item>
+
+        <item>Shaykh Nooruddeen Durkee and The Green Mountain School - They provided us with the Biography of Imam Abul Hasan Ash-Shadhili and the Introduction to the Shadhili Way - Taken from Shaykh Nooruddeen\'s work \'The School of the Shadhdhuli Way - Volume 1 - Orisons\'</item>
+
+        <item>Sacred Knowledge - They provided us with Awrad Texts and Audio recordings of Sayyid Shaykh Muhammad Al-Yaqoubi</item>
+
+        <item>ShaykhFaisal.com/Islamic Forum Canada - They provided us with Awrad Texts and Audio recordings of Shaykh Faisal Hamid Abdur Razak</item>
+
+        <item>Taqwa.sg - They provided us with Awrad Texts</item>
+
+        <item>Please make dua for the brothers and sisters involved in these organisations and please support and promote their projects and works.</item>
+
+    </string-array>
+
 
 </resources>

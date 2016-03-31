@@ -5,6 +5,7 @@ import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Intent;
 import android.content.res.Resources;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -47,8 +48,21 @@ public class bioactivityc3 extends AppCompatActivity {
         wirdlist.addHeaderView(a, null, false);
         a.setScaleType(ImageView.ScaleType.FIT_START);
         a.setAdjustViewBounds(true);
-        View footerView = View.inflate(this, R.layout.footer, null);
-        wirdlist.addFooterView(footerView);
+        ImageView b = new ImageView(this);
+        b.setImageResource(R.drawable.gmsbtn);
+        wirdlist.addFooterView(b);
+        b.setScaleType(ImageView.ScaleType.FIT_START);
+        b.setAdjustViewBounds(true);
+        b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Uri uri = Uri.parse("http://www.greenmountainschool.org"); // missing 'http://' will cause crashed
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
+
+            }
+        });
     }
 
     @Override

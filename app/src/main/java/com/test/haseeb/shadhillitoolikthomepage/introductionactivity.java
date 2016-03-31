@@ -7,6 +7,7 @@ import android.content.ClipboardManager;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -54,8 +55,20 @@ public class introductionactivity extends AppCompatActivity {
         a.setImageResource(R.drawable.intro1);
         wirdlist.addHeaderView(a, null, false);
         ImageView b = new ImageView(this);
-        b.setImageResource(R.drawable.scfooter);
-        wirdlist.addFooterView(b, null, false);
+        b.setImageResource(R.drawable.gmsbtn);
+        wirdlist.addFooterView(b);
+        b.setScaleType(ImageView.ScaleType.FIT_START);
+        b.setAdjustViewBounds(true);
+        b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Uri uri = Uri.parse("http://www.greenmountainschool.org"); // missing 'http://' will cause crashed
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
+
+            }
+        });
         registerForContextMenu(wirdlist);
         a.setScaleType(ImageView.ScaleType.FIT_START);
         a.setAdjustViewBounds(true);
